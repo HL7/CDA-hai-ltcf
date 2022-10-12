@@ -18,10 +18,10 @@
 -->
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3"
-  xmlns:voc="http://www.lantanagroup.com/voc" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/infrastructure/cda/CDA_SDTC.xsd">
-  
+  xmlns:voc="http://www.lantanagroup.com/voc">
+
   <!-- Comments precede their subject -->
-  
+
   <!-- This is a single-person report. -->
   <realmCode code="US"/>
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
@@ -108,7 +108,7 @@
      ******************************************************** -->
   <component>
     <structuredBody>
-      
+
       <!-- ********************************************************
      Encounters Section in a LTCF Report
      ******************************************************** -->
@@ -160,7 +160,7 @@
           </entry>
           
           <!-- The Resident has been transferred from an acute facility in the past 4 weeks? = TRUE -->
-           <entry typeCode="DRIV">
+          <entry typeCode="DRIV">
             <observation classCode="OBS" moodCode="EVN">
               <!-- [HAI LTCF R1D1] Transfer From Acute Care Facility to LTCF in Past Four Weeks -->
               <templateId root="2.16.840.1.113883.10.20.5.1.3.5" extension="2019-08-01"/>
@@ -188,12 +188,14 @@
               </entryRelationship>
             </observation>
           </entry>
-          
+
           <!-- The commented-out entry/observation below illustrates the case where the resident has not been transferred 
                from an acute facility in the past 4 weeks? Value = FALSE -->
           <!--<entry typeCode="DRIV">
-            <observation classCode="OBS" moodCode="EVN"> [HAI LTCF R1D1] Transfer From Acute Care Facility to LTCF in Past Four Weeks <templateId
-              root="2.16.840.1.113883.10.20.5.1.3.5" extension="2019-08-01"/>
+            <observation classCode="OBS" moodCode="EVN"> 
+              <!-\- [HAI LTCF R1D1] Transfer From Acute Care Facility to LTCF in Past Four Weeks -\->
+              <templateId
+                root="2.16.840.1.113883.10.20.5.1.3.5" extension="2019-08-01"/>
               <code code="1374-8" displayName="Resident transferred from acute care facility in past 4 weeks" codeSystem="2.16.840.1.113883.6.277"
                 codeSystemName="cdcNHSN"/>
               <statusCode code="completed"/>
