@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 2/7/2023
+Schematron generated from Trifolia on 2/22/2023
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -34,8 +34,6 @@ Schematron generated from Trifolia on 2/7/2023
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-CLOSEDTEMPLATE" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.3-2019-08-01-errors" />
@@ -46,19 +44,21 @@ Schematron generated from Trifolia on 2/7/2023
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.4-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.2-2019-08-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.2-2019-08-01-CLOSEDTEMPLATE" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-CLOSEDTEMPLATE" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-CLOSEDTEMPLATE" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-CLOSEDTEMPLATE" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.5-2019-08-01-errors" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.5-2019-08-01-CLOSEDTEMPLATE" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-CLOSEDTEMPLATE" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-CLOSEDTEMPLATE" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-CLOSEDTEMPLATE" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-CLOSEDTEMPLATE" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-CLOSEDTEMPLATE" />
   </sch:phase>
   <sch:phase id="warnings">
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-warnings" />
@@ -78,19 +78,19 @@ Schematron generated from Trifolia on 2/7/2023
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.61-2017-04-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.3-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.1-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.4-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.2-2019-08-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-warnings" />
-    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.5-2019-08-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-warnings" />
+    <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-warnings" />
   </sch:phase>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors-abstract" abstract="true">
@@ -103,7 +103,7 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:assert id="a-81-7143" test="count(cda:value)=1">SHALL contain exactly one [1..1] value (CONF:81-7143).</sch:assert>
       <sch:assert id="a-81-7151" test="not(cda:referenceRange) or cda:referenceRange[count(cda:observationRange)=1]">The referenceRange, if present, SHALL contain exactly one [1..1] observationRange (CONF:81-7151).</sch:assert>
       <sch:assert id="a-81-7152-c" test="not(cda:referenceRange/cda:observationRange/cda:code)">This observationRange SHALL NOT contain [0..0] code (CONF:81-7152).</sch:assert>
-      <sch:assert id="a-81-14849" test="cda:statusCode[@code and @code=document('CDAR2_IG_HAI_LTCF_R1_STU2.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.11.20.9.39']/voc:code/@value]">This statusCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Result Status urn:oid:2.16.840.1.113883.11.20.9.39 STATIC (CONF:81-14849).</sch:assert>
+      <sch:assert id="a-81-14849" test="cda:statusCode[@code and @code=document('CDAR2_IG_HAI_LTCF_R1_STU1_1.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.11.20.9.39']/voc:code/@value]">This statusCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Result Status urn:oid:2.16.840.1.113883.11.20.9.39 STATIC (CONF:81-14849).</sch:assert>
       <sch:assert id="a-81-15926-c" test="count(cda:text/cda:reference[@value])=0 or starts-with(cda:text/cda:reference/@value, '#')">This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:81-15926).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.2']]">
@@ -393,14 +393,14 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:assert id="a-3357-28469" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:3357-28469).</sch:assert>
       <sch:assert id="a-3357-30599" test="@classCode='ACT'">SHALL contain exactly one [1..1] @classCode="ACT" Act (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:3357-30599).</sch:assert>
       <sch:assert id="a-3357-30600" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:3357-30600).</sch:assert>
-      <sch:assert id="a-3357-30905-c" test="not(tested_DYNAMIC_BINDING)">If this is a Neonatal Intensive Care Unit (NICU) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsNICU urn:oid:2.16.840.1.113883.10.20.5.9.19 **DYNAMIC** (CONF:3357-30905).</sch:assert>
-      <sch:assert id="a-3357-30906-c" test="not(tested_DYNAMIC_BINDING)">If this is an Intensive Care Unit (ICU) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsICU urn:oid:2.16.840.1.113883.10.20.5.9.18 **DYNAMIC** (CONF:3357-30906).</sch:assert>
-      <sch:assert id="a-3357-30907-c" test="not(tested_DYNAMIC_BINDING)">If this is a Vascular Access Type Report (VAT) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsDialysis urn:oid:2.16.840.1.113883.10.20.5.9.22 **DYNAMIC** (CONF:3357-30907).</sch:assert>
-      <sch:assert id="a-3357-30908-c" test="not(tested_DYNAMIC_BINDING)">If this is a Prevention Process and Outcome Measures (POM) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsMDRO urn:oid:2.16.840.1.113883.10.20.5.9.21 **DYNAMIC** (CONF:3357-30908).</sch:assert>
-      <sch:assert id="a-3357-30909-c" test="not(tested_DYNAMIC_BINDING)">If this is a Specialty Care Area (SCA) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsSCA urn:oid:2.16.840.1.113883.10.20.5.9.20 **DYNAMIC** (CONF:3357-30909).</sch:assert>
-      <sch:assert id="a-3357-30913-c" test="not(tested_DYNAMIC_BINDING)">If this is an Outpatient Procedure Component Denominator for Same Day Outcome Measures Report then the code SHALL be selected from ValueSet NHSNReportNoEventsOPCSameDayOutcomeMeasures urn:oid:2.16.840.1.113883.10.20.5.9.33 **DYNAMIC** (CONF:3357-30913).</sch:assert>
-      <sch:assert id="a-3357-30914-c" test="not(tested_DYNAMIC_BINDING)">If this is an Antimicrobial Resistance Option (ARO) Summary Report then the code SHALL be selected from ValueSet NHSNReportNoEventsAR urn:oid:2.16.840.1.113883.10.20.5.9.35 **DYNAMIC** (CONF:3357-30914).</sch:assert>
-      <sch:assert id="a-3357-30915-c" test="not(tested_DYNAMIC_BINDING)">If this is an MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF then the code SHALL be selected from ValueSet NHSNReportNoEventsMDROCDI (urn:oid:2.16.840.1.113883.10.20.5.1.9.1) **DYNAMIC** (CONF:3357-30915).</sch:assert>
+      <sch:assert id="a-3357-30905-c" test="not(tested_DYNAMIC_BINDING)">If this is a Neonatal Intensive Care Unit (NICU) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsNICU urn:oid:2.16.840.1.113883.10.20.5.9.19](#NHSNReportNoEventsNICU) **DYNAMIC** (CONF:3357-30905).</sch:assert>
+      <sch:assert id="a-3357-30906-c" test="not(tested_DYNAMIC_BINDING)">If this is an Intensive Care Unit (ICU) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsICU urn:oid:2.16.840.1.113883.10.20.5.9.18](#NHSNReportNoEventsICU) **DYNAMIC** (CONF:3357-30906).</sch:assert>
+      <sch:assert id="a-3357-30907-c" test="not(tested_DYNAMIC_BINDING)">If this is a Vascular Access Type Report (VAT) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsDialysis urn:oid:2.16.840.1.113883.10.20.5.9.22](#NHSNReportNoEventsDialysis) **DYNAMIC** (CONF:3357-30907).</sch:assert>
+      <sch:assert id="a-3357-30908-c" test="not(tested_DYNAMIC_BINDING)">If this is a Prevention Process and Outcome Measures (POM) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsMDRO urn:oid:2.16.840.1.113883.10.20.5.9.21](#NHSNReportNoEventsMDRO) **DYNAMIC** (CONF:3357-30908).</sch:assert>
+      <sch:assert id="a-3357-30909-c" test="not(tested_DYNAMIC_BINDING)">If this is a Specialty Care Area (SCA) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsSCA urn:oid:2.16.840.1.113883.10.20.5.9.20](#NHSNReportNoEventsSCA) **DYNAMIC** (CONF:3357-30909).</sch:assert>
+      <sch:assert id="a-3357-30913-c" test="not(tested_DYNAMIC_BINDING)">If this is an Outpatient Procedure Component Denominator for Same Day Outcome Measures Report then the code SHALL be selected from value set [NHSNReportNoEventsOPCSameDayOutcomeMeasures urn:oid:2.16.840.1.113883.10.20.5.9.33](#NHSNReportNoEventsOPCSameDayOutcomeMeas) **DYNAMIC** (CONF:3357-30913).</sch:assert>
+      <sch:assert id="a-3357-30914-c" test="not(tested_DYNAMIC_BINDING)">If this is an Antimicrobial Resistance Option (ARO) Summary Report then the code SHALL be selected from value set [NHSNReportNoEventsAR urn:oid:2.16.840.1.113883.10.20.5.9.35](#NHSNReportNoEventsAR) **DYNAMIC** (CONF:3357-30914).</sch:assert>
+      <sch:assert id="a-3357-30915-c" test="not(tested_DYNAMIC_BINDING)">If this is a LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures report then the code SHALL be selected from ValueSet [NHSNReportNoEventsMDROLTCF (urn:oid:2.16.840.1.113883.10.20.5.1.9.1)](#NHSNReportNoEventsMDROLTCF) **DYNAMIC** (CONF:3357-30915).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-errors" context="cda:act[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.249' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.249-2018-04-01-errors-abstract" />
@@ -435,38 +435,6 @@ Schematron generated from Trifolia on 2/7/2023
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.5.62' and @extension='2018-04-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-errors-CL-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-30977" test="count(cda:componentOf)=1">SHALL contain exactly one [1..1] componentOf (CONF:4417-30977).</sch:assert>
-      <sch:assert id="a-4417-30978" test="cda:componentOf[count(cda:encompassingEncounter)=1]">This componentOf SHALL contain exactly one [1..1] encompassingEncounter (CONF:4417-30978).</sch:assert>
-      <sch:assert id="a-4417-30979" test="cda:componentOf/cda:encompassingEncounter[count(cda:effectiveTime)=1]">This encompassingEncounter SHALL contain exactly one [1..1] effectiveTime (CONF:4417-30979).</sch:assert>
-      <sch:assert id="a-4417-30981" test="cda:componentOf/cda:encompassingEncounter[count(cda:location)=1]">This encompassingEncounter SHALL contain exactly one [1..1] location (CONF:4417-30981).</sch:assert>
-      <sch:assert id="a-4417-30982" test="cda:componentOf/cda:encompassingEncounter/cda:location[count(cda:healthCareFacility)=1]">This location SHALL contain exactly one [1..1] healthCareFacility (CONF:4417-30982).</sch:assert>
-      <sch:assert id="a-4417-30983" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility[count(cda:id)=1]">This healthCareFacility SHALL contain exactly one [1..1] id (CONF:4417-30983).</sch:assert>
-      <sch:assert id="a-4417-30984" test="count(cda:component)=1">SHALL contain exactly one [1..1] component (CONF:4417-30984).</sch:assert>
-      <sch:assert id="a-4417-30985" test="cda:component[count(cda:structuredBody)=1]">This component SHALL contain exactly one [1..1] structuredBody (CONF:4417-30985).</sch:assert>
-      <sch:assert id="a-4417-30986" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.1' and @extension='2019-08-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4417-30986) such that it SHALL contain exactly one [1..1] Findings Section in a Laboratory Identified Report LTCF (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.1:2019-08-01) (CONF:4417-30987).</sch:assert>
-      <sch:assert id="a-4417-30988" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.2' and @extension='2019-08-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4417-30988) such that it SHALL contain exactly one [1..1] Encounters Section in an LTCF Report (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.2:2019-08-01) (CONF:4417-30989).</sch:assert>
-      <sch:assert id="a-4417-30990" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4417-30990) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.1" (CONF:4417-30998). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4417-30999).</sch:assert>
-      <sch:assert id="a-4417-30996" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4417-30996).</sch:assert>
-      <sch:assert id="a-4417-31247" test="count(cda:title)=1">SHALL contain exactly one [1..1] title (CONF:4417-31247).</sch:assert>
-      <sch:assert id="a-4417-31360" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:id[@extension]">This id SHALL contain exactly one [1..1] @extension (CONF:4417-31360).</sch:assert>
-      <sch:assert id="a-4417-31361" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility[count(cda:code)=1]">This healthCareFacility SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNPrimaryResidentServiceType urn:oid:2.16.840.1.113883.10.20.5.1.5.9.3 DYNAMIC (CONF:4417-31361).</sch:assert>
-      <sch:assert id="a-4417-31427" test="cda:componentOf/cda:encompassingEncounter/cda:effectiveTime[count(cda:low)=1]">This effectiveTime SHALL contain exactly one [1..1] low (CONF:4417-31427).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-CLOSEDTEMPLATE">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors-CL-abstract" abstract="true">
-      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4417-11712-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.1.1' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.1.3' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.2.1' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.3' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.1.3.2' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.2.2' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.4' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.1.3.5' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.12' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.1.1:2019-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-errors-CL-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-errors">
@@ -601,73 +569,6 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.2-2019-08-01-errors-CL-abstract" />
     </sch:rule>
   </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors-abstract" abstract="true">
-      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-errors-abstract" />
-      <sch:assert id="a-4417-31187" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4417-31187) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.2.3" (CONF:4417-31193). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4417-31194).</sch:assert>
-      <sch:assert id="a-4417-31188" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4417-31188).</sch:assert>
-      <sch:assert id="a-4417-31191" test="count(cda:entry[count(cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']])=1])=1">SHALL contain exactly one [1..1] entry (CONF:4417-31191) such that it SHALL contain exactly one [1..1] Summary Encounter LTCF (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.15:2019-08-01) (CONF:4417-31352).</sch:assert>
-      <sch:assert id="a-4417-31195" test="cda:code[@code='51900-9']">This code SHALL contain exactly one [1..1] @code="51900-9" Summary Data Section (CONF:4417-31195).</sch:assert>
-      <sch:assert id="a-4417-31196" test="cda:code[@codeSystem='2.16.840.1.113883.6.1']">This code SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:4417-31196).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-CLOSEDTEMPLATE">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors-CL-abstract" abstract="true">
-      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4417-11730-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.2.3' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2019-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.3:2019-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-errors-CL-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors-abstract" abstract="true">
-      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.28-errors-abstract" />
-      <sch:assert id="a-4417-31197" test="count(cda:component)=1">SHALL contain exactly one [1..1] component (CONF:4417-31197).</sch:assert>
-      <sch:assert id="a-4417-31198" test="cda:component[count(cda:structuredBody)=1]">This component SHALL contain exactly one [1..1] structuredBody (CONF:4417-31198).</sch:assert>
-      <sch:assert id="a-4417-31199" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2019-08-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4417-31199) such that it SHALL contain exactly one [1..1] Summary Data Section LTCF (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.3:2019-08-01) (CONF:4417-31200).</sch:assert>
-      <sch:assert id="a-4417-31201" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4417-31201) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.2" (CONF:4417-31202). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4417-31203).</sch:assert>
-      <sch:assert id="a-4417-31248" test="count(cda:title)=1">SHALL contain exactly one [1..1] title (CONF:4417-31248).</sch:assert>
-      <sch:assert id="a-4417-31262" test="count(cda:documentationOf)=1">SHALL contain exactly one [1..1] documentationOf (CONF:4417-31262).</sch:assert>
-      <sch:assert id="a-4417-31263" test="cda:documentationOf[count(cda:serviceEvent)=1]">This documentationOf SHALL contain exactly one [1..1] serviceEvent (CONF:4417-31263).</sch:assert>
-      <sch:assert id="a-4417-31264" test="cda:documentationOf/cda:serviceEvent[count(cda:effectiveTime)=1]">This serviceEvent SHALL contain exactly one [1..1] effectiveTime (CONF:4417-31264).</sch:assert>
-      <sch:assert id="a-4417-31266" test="cda:documentationOf/cda:serviceEvent/cda:effectiveTime[count(cda:low)=1]">This effectiveTime SHALL contain exactly one [1..1] low (CONF:4417-31266).</sch:assert>
-      <sch:assert id="a-4417-31267" test="cda:documentationOf/cda:serviceEvent/cda:effectiveTime[count(cda:high)=1]">This effectiveTime SHALL contain exactly one [1..1] high (CONF:4417-31267).</sch:assert>
-      <sch:assert id="a-4417-31268" test="count(cda:participant[count(cda:associatedEntity[count(cda:id)=1])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4417-31268) such that it SHALL contain exactly one [1..1] associatedEntity (CONF:4417-31269). This associatedEntity SHALL contain exactly one [1..1] id (CONF:4417-31273).</sch:assert>
-      <sch:assert id="a-4417-31270" test="count(cda:participant[count(cda:associatedEntity[count(cda:code)=1])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4417-31270) such that it SHALL contain exactly one [1..1] associatedEntity (CONF:4417-31271). This associatedEntity SHALL contain exactly one [1..1] code (CONF:4417-31272).</sch:assert>
-      <sch:assert id="a-4417-31391" test="cda:documentationOf/cda:serviceEvent[count(cda:code)=1]">This serviceEvent SHALL contain exactly one [1..1] code (CONF:4417-31391).</sch:assert>
-      <sch:assert id="a-4417-31392" test="cda:documentationOf/cda:serviceEvent/cda:code[@code='1891-1']">This code SHALL contain exactly one [1..1] @code="1891-1" MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF (CONF:4417-31392).</sch:assert>
-      <sch:assert id="a-4417-31393" test="cda:documentationOf/cda:serviceEvent/cda:code[@codeSystem]">This code SHALL contain exactly one [1..1] @codeSystem, which SHALL be selected from CodeSystem CDCNHSN (urn:oid:2.16.840.1.113883.6.277) STATIC (CONF:4417-31393).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31268-branch-31268-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31419-branch-31268" test="cda:associatedEntity/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4417-31419).</sch:assert>
-      <sch:assert id="a-4417-31420-branch-31268" test="cda:associatedEntity/cda:id[@extension='FACWIDEIN']">This id SHALL contain exactly one [1..1] @extension="FACWIDEIN" (CONF:4417-31420).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31268-branch-31268-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2019-08-01']]/cda:participant[cda:associatedEntity[cda:id]]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31268-branch-31268-errors-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31270-branch-31270-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31274-branch-31270" test="cda:associatedEntity/cda:code[@code='389109008' and @codeSystem='2.16.840.1.113883.6.96']">This code SHALL contain exactly one [1..1] @code="389109008" Group (social concept) (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:4417-31274).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31270-branch-31270-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2019-08-01']]/cda:participant[cda:associatedEntity[cda:code]]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-31270-branch-31270-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-CLOSEDTEMPLATE">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors-CL-abstract" abstract="true">
-      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4417-11731-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.1.2' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.1.2.3' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.1.2:2019-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-errors-CL-abstract" />
-    </sch:rule>
-  </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-errors">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-errors-abstract" abstract="true">
       <sch:assert id="a-4417-31224" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4417-31224).</sch:assert>
@@ -691,67 +592,6 @@ Schematron generated from Trifolia on 2/7/2023
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.12' and @extension='2019-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-errors-CL-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31320" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4417-31320) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.3.14" (CONF:4417-31326). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4417-31336).</sch:assert>
-      <sch:assert id="a-4417-31321" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4417-31321).</sch:assert>
-      <sch:assert id="a-4417-31322" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:4417-31322).</sch:assert>
-      <sch:assert id="a-4417-31323" test="count(cda:value)=1">SHALL contain exactly one [1..1] value (CONF:4417-31323).</sch:assert>
-      <sch:assert id="a-4417-31324" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:4417-31324).</sch:assert>
-      <sch:assert id="a-4417-31325" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:4417-31325).</sch:assert>
-      <!--No schematron defined for primitive constraint 171622 on template 11773-->
-      <sch:assert id="a-4417-31332-c" test="not(tested)">If this is a MDRO and CDI Monthly Summary Data Report, NHSN protocol requires, at the time of publication, the code shall be selected from Codes for MDRO and CDI Summary Data LTCF (2.16.840.1.113883.10.20.5.1.5.9.2) (CONF:4417-31332).</sch:assert>
-      <sch:assert id="a-4417-31334" test="cda:statusCode[@code='completed']">This statusCode SHALL contain exactly one [1..1] @code="completed" Completed (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:4417-31334).</sch:assert>
-      <sch:assert id="a-4417-31335-c" test="(cda:value/@xsi:type='PQ' and cda:value/@unit='d') or (cda:value/@xsi:type='INT') or (cda:value/@xsi:type='CD')">If the observation reports a number of days, the value of value/xsi:type SHALL be PQ and the value of value/@unit SHALL be d. If the observation reports a number of residents, episodes, or events the value of value/@xsi:type SHALL be INT. If the value is a code, the value of value/@xsi:type SHALL be CD (CONF:4417-31335).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-CLOSEDTEMPLATE">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors-CL-abstract" abstract="true">
-      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4417-11773-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2019-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.14:2019-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-errors-CL-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31337" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4417-31337) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.3.15" (CONF:4417-31344). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4417-31351).</sch:assert>
-      <sch:assert id="a-4417-31338" test="count(cda:participant[@typeCode='LOC'][count(cda:participantRole[@classCode='SDLOC'])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4417-31338) such that it SHALL contain exactly one [1..1] participantRole (CONF:4417-31339). This participantRole SHALL contain exactly one [1..1] @classCode="SDLOC" Service Delivery Location (CodeSystem: HL7EntityClass urn:oid:2.16.840.1.113883.5.41 STATIC) (CONF:4417-31346). SHALL contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC) (CONF:4417-31345).</sch:assert>
-      <sch:assert id="a-4417-31340" test="count(cda:entryRelationship[@typeCode='COMP']) &gt; 0">SHALL contain at least one [1..*] entryRelationship (CONF:4417-31340) such that it SHALL contain exactly one [1..1] @typeCode="COMP" Has component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:4417-31350).</sch:assert>
-      <sch:assert id="a-4417-31342" test="@classCode='ENC'">SHALL contain exactly one [1..1] @classCode="ENC" Encounter (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:4417-31342).</sch:assert>
-      <sch:assert id="a-4417-31343" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:4417-31343).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31338-branch-31338-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31362-branch-31338" test="cda:participantRole[count(cda:id)=1]">This participantRole SHALL contain exactly one [1..1] id (CONF:4417-31362).</sch:assert>
-      <sch:assert id="a-4417-31363-branch-31338" test="cda:participantRole/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4417-31363).</sch:assert>
-      <sch:assert id="a-4417-31364-branch-31338" test="cda:participantRole/cda:id[@extension]">This id SHALL contain exactly one [1..1] @extension (CONF:4417-31364).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31338-branch-31338-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']]/cda:participant[cda:participantRole[@classCode='SDLOC']][@typeCode='LOC']">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31338-branch-31338-errors-abstract" />
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31340-branch-31340-errors-abstract" abstract="true">
-      <sch:assert id="a-4417-31341-branch-31340" test="count(cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2019-08-01']])=1">SHALL contain exactly one [1..1] Summary Data Observation LTCF (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.14:2019-08-01) (CONF:4417-31341).</sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31340-branch-31340-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']]/cda:entryRelationship[@typeCode='COMP']">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-31340-branch-31340-errors-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-CLOSEDTEMPLATE">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors-CL-abstract" abstract="true">
-      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
-<!-- <sch:assert id="a-4417-11774-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2019-08-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.15:2019-08-01' is a closed template, only defined templates are allowed.</sch:assert> -->
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-errors-CL-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.5-2019-08-01-errors">
@@ -784,7 +624,7 @@ Schematron generated from Trifolia on 2/7/2023
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-errors">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-errors-abstract" abstract="true">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.25-errors-abstract" />
-      <sch:assert id="a-4544-31399" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.3'][@extension='2019-08-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31399) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.3" (CONF:4544-31406). SHALL contain exactly one [1..1] @extension="2019-08-01" (CONF:4544-31415).</sch:assert>
+      <sch:assert id="a-4544-31399" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.3'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31399) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.3" (CONF:4544-31406). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-31415).</sch:assert>
       <sch:assert id="a-4544-31400" test="count(cda:recordTarget)=1">SHALL contain exactly one [1..1] recordTarget (CONF:4544-31400).</sch:assert>
       <sch:assert id="a-4544-31401" test="cda:recordTarget[count(cda:patientRole)=1]">This recordTarget SHALL contain exactly one [1..1] patientRole (CONF:4544-31401).</sch:assert>
       <sch:assert id="a-4544-31402" test="cda:recordTarget/cda:patientRole[count(cda:id) &gt; 0]">This patientRole SHALL contain at least one [1..*] id (CONF:4544-31402).</sch:assert>
@@ -796,11 +636,176 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-errors-abstract" />
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-31403-branch-31403-errors-abstract" abstract="true">
-      <sch:assert id="a-4544-31410-branch-31403" test="cda:administrativeGenderCode[@code and @code=document('CDAR2_IG_HAI_LTCF_R1_STU2.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.1.11.1']/voc:code/@value]">This administrativeGenderCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Administrative Gender (HL7 V3) urn:oid:2.16.840.1.113883.1.11.1 STATIC (CONF:4544-31410).</sch:assert>
+      <sch:assert id="a-4544-31410-branch-31403" test="cda:administrativeGenderCode[@code and @code=document('CDAR2_IG_HAI_LTCF_R1_STU1_1.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.1.11.1']/voc:code/@value]">This administrativeGenderCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Administrative Gender (HL7 V3) urn:oid:2.16.840.1.113883.1.11.1 STATIC (CONF:4544-31410).</sch:assert>
       <sch:assert id="a-4544-31411-branch-31403" test="cda:birthTime[@value]">This birthTime SHALL contain exactly one [1..1] @value (CONF:4544-31411).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-31403-branch-31403-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.3' and @extension='2023-02-01']]/cda:recordTarget/cda:patientRole/cda:patient[cda:administrativeGenderCode][cda:birthTime][cda:name]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-31403-branch-31403-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors-abstract" abstract="true">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-errors-abstract" />
+      <sch:assert id="a-4544-30977" test="count(cda:componentOf)=1">SHALL contain exactly one [1..1] componentOf (CONF:4544-30977).</sch:assert>
+      <sch:assert id="a-4544-30978" test="cda:componentOf[count(cda:encompassingEncounter)=1]">This componentOf SHALL contain exactly one [1..1] encompassingEncounter (CONF:4544-30978).</sch:assert>
+      <sch:assert id="a-4544-30979" test="cda:componentOf/cda:encompassingEncounter[count(cda:effectiveTime)=1]">This encompassingEncounter SHALL contain exactly one [1..1] effectiveTime (CONF:4544-30979).</sch:assert>
+      <sch:assert id="a-4544-30981" test="cda:componentOf/cda:encompassingEncounter[count(cda:location)=1]">This encompassingEncounter SHALL contain exactly one [1..1] location (CONF:4544-30981).</sch:assert>
+      <sch:assert id="a-4544-30982" test="cda:componentOf/cda:encompassingEncounter/cda:location[count(cda:healthCareFacility)=1]">This location SHALL contain exactly one [1..1] healthCareFacility (CONF:4544-30982).</sch:assert>
+      <sch:assert id="a-4544-30983" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility[count(cda:id)=1]">This healthCareFacility SHALL contain exactly one [1..1] id (CONF:4544-30983).</sch:assert>
+      <sch:assert id="a-4544-30984" test="count(cda:component)=1">SHALL contain exactly one [1..1] component (CONF:4544-30984).</sch:assert>
+      <sch:assert id="a-4544-30985" test="cda:component[count(cda:structuredBody)=1]">This component SHALL contain exactly one [1..1] structuredBody (CONF:4544-30985).</sch:assert>
+      <sch:assert id="a-4544-30986" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.1' and @extension='2019-08-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4544-30986) such that it SHALL contain exactly one [1..1] Findings Section in a Laboratory Identified Report LTCF (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.1:2019-08-01) (CONF:4544-30987).</sch:assert>
+      <sch:assert id="a-4544-30988" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.2' and @extension='2019-08-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4544-30988) such that it SHALL contain exactly one [1..1] Encounters Section in an LTCF Report (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.2:2019-08-01) (CONF:4544-30989).</sch:assert>
+      <sch:assert id="a-4544-30990" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-30990) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.1" (CONF:4544-30998). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-30999).</sch:assert>
+      <sch:assert id="a-4544-31427" test="cda:componentOf/cda:encompassingEncounter/cda:effectiveTime[count(cda:low)=1]">This effectiveTime SHALL contain exactly one [1..1] low (CONF:4544-31427).</sch:assert>
+      <sch:assert id="a-4544-30996" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4544-30996).</sch:assert>
+      <sch:assert id="a-4544-31360" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility/cda:id[@extension]">This id SHALL contain exactly one [1..1] @extension (CONF:4544-31360).</sch:assert>
+      <sch:assert id="a-4544-31361" test="cda:componentOf/cda:encompassingEncounter/cda:location/cda:healthCareFacility[count(cda:code)=1]">This healthCareFacility SHALL contain exactly one [1..1] code, which SHALL be selected from ValueSet NHSNPrimaryResidentServiceType urn:oid:2.16.840.1.113883.10.20.5.1.5.9.3 DYNAMIC (CONF:4544-31361).</sch:assert>
+      <sch:assert id="a-4544-31247" test="count(cda:title)=1">SHALL contain exactly one [1..1] title (CONF:4544-31247).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-CLOSEDTEMPLATE">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors-CL-abstract" abstract="true">
+      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
+<!-- <sch:assert id="a-4544-12676-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.1.1' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.1.3' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.1.3' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.2.1' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.3' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.22.4.2' and not(@root = '2.16.840.1.113883.10.20.5.1.3.2' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.2.2' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.4' and @extension = '2019-08-01') and @root != '2.16.840.1.113883.10.20.22.4.49' and not(@root = '2.16.840.1.113883.10.20.5.1.3.5' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.12' and @extension = '2019-08-01') and not(@root = '2.16.840.1.113883.10.20.5.5.61' and @extension = '2017-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.243' and @extension = '2017-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.1.1:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-errors-CL-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors-abstract" abstract="true">
+      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.28-errors-abstract" />
+      <sch:assert id="a-4544-31197" test="count(cda:component)=1">SHALL contain exactly one [1..1] component (CONF:4544-31197).</sch:assert>
+      <sch:assert id="a-4544-31198" test="cda:component[count(cda:structuredBody)=1]">This component SHALL contain exactly one [1..1] structuredBody (CONF:4544-31198).</sch:assert>
+      <sch:assert id="a-4544-31199" test="cda:component/cda:structuredBody[count(cda:component[count(cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2023-02-01']])=1])=1]">This structuredBody SHALL contain exactly one [1..1] component (CONF:4544-31199) such that it SHALL contain exactly one [1..1] Summary Data Section LTCF (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.3:2023-02-01) (CONF:4544-31200).</sch:assert>
+      <sch:assert id="a-4544-31201" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31201) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.1.2" (CONF:4544-31202). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-31203).</sch:assert>
+      <sch:assert id="a-4544-31262" test="count(cda:documentationOf)=1">SHALL contain exactly one [1..1] documentationOf (CONF:4544-31262).</sch:assert>
+      <sch:assert id="a-4544-31263" test="cda:documentationOf[count(cda:serviceEvent)=1]">This documentationOf SHALL contain exactly one [1..1] serviceEvent (CONF:4544-31263).</sch:assert>
+      <sch:assert id="a-4544-31264" test="cda:documentationOf/cda:serviceEvent[count(cda:effectiveTime)=1]">This serviceEvent SHALL contain exactly one [1..1] effectiveTime (CONF:4544-31264).</sch:assert>
+      <sch:assert id="a-4544-31391" test="cda:documentationOf/cda:serviceEvent[count(cda:code)=1]">This serviceEvent SHALL contain exactly one [1..1] code (CONF:4544-31391).</sch:assert>
+      <sch:assert id="a-4544-31268" test="count(cda:participant[count(cda:associatedEntity[count(cda:id)=1])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4544-31268) such that it SHALL contain exactly one [1..1] associatedEntity (CONF:4544-31269). This associatedEntity SHALL contain exactly one [1..1] id (CONF:4544-31273).</sch:assert>
+      <sch:assert id="a-4544-31270" test="count(cda:participant[count(cda:associatedEntity[count(cda:code)=1])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4544-31270) such that it SHALL contain exactly one [1..1] associatedEntity (CONF:4544-31271). This associatedEntity SHALL contain exactly one [1..1] code (CONF:4544-31272).</sch:assert>
+      <sch:assert id="a-4544-31248" test="count(cda:title)=1">SHALL contain exactly one [1..1] title (CONF:4544-31248).</sch:assert>
+      <sch:assert id="a-4544-31266" test="cda:documentationOf/cda:serviceEvent/cda:effectiveTime[count(cda:low)=1]">This effectiveTime SHALL contain exactly one [1..1] low (CONF:4544-31266).</sch:assert>
+      <sch:assert id="a-4544-31267" test="cda:documentationOf/cda:serviceEvent/cda:effectiveTime[count(cda:high)=1]">This effectiveTime SHALL contain exactly one [1..1] high (CONF:4544-31267).</sch:assert>
+      <sch:assert id="a-4544-31392" test="cda:documentationOf/cda:serviceEvent/cda:code[@code='1891-1']">This code SHALL contain exactly one [1..1] @code="1891-1" MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF (CONF:4544-31392).</sch:assert>
+      <sch:assert id="a-4544-31393" test="cda:documentationOf/cda:serviceEvent/cda:code[@codeSystem]">This code SHALL contain exactly one [1..1] @codeSystem, which SHALL be selected from CodeSystem CDCNHSN (urn:oid:2.16.840.1.113883.6.277) STATIC (CONF:4544-31393).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31268-branch-31268-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31428-branch-31268" test="cda:associatedEntity/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4544-31428).</sch:assert>
+      <sch:assert id="a-4544-31429-branch-31268" test="cda:associatedEntity/cda:id[@extension='FACWIDEIN']">This id SHALL contain exactly one [1..1] @extension="FACWIDEIN" (CONF:4544-31429).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31268-branch-31268-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2023-02-01']]/cda:participant[cda:associatedEntity[cda:id]]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31268-branch-31268-errors-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31270-branch-31270-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31274-branch-31270" test="cda:associatedEntity/cda:code[@code='389109008' and @codeSystem='2.16.840.1.113883.6.96']">This code SHALL contain exactly one [1..1] @code="389109008" Group (social concept) (CodeSystem: SNOMED CT urn:oid:2.16.840.1.113883.6.96) (CONF:4544-31274).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31270-branch-31270-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2023-02-01']]/cda:participant[cda:associatedEntity[cda:code]]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-31270-branch-31270-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-CLOSEDTEMPLATE">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors-CL-abstract" abstract="true">
+      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
+<!-- <sch:assert id="a-4544-12677-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.1.2' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.28' and @root != '2.16.840.1.113883.10.20.5.4.28' and not(@root = '2.16.840.1.113883.10.20.5.1.2.3' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.5.62' and @extension = '2018-04-01') and not(@root = '2.16.840.1.113883.10.20.5.6.249' and @extension = '2018-04-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.1.2:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors-CL" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-errors-CL-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31320" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31320) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.3.14" (CONF:4544-31326). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-31336).</sch:assert>
+      <sch:assert id="a-4544-31321" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4544-31321).</sch:assert>
+      <sch:assert id="a-4544-31322" test="count(cda:statusCode)=1">SHALL contain exactly one [1..1] statusCode (CONF:4544-31322).</sch:assert>
+      <sch:assert id="a-4544-31323" test="count(cda:value)=1">SHALL contain exactly one [1..1] value (CONF:4544-31323).</sch:assert>
+      <!--No schematron defined for primitive constraint 194385 on template 12678-->
+      <sch:assert id="a-4544-31332-c" test="not(tested)">If this is a MDRO and CDI Monthly Summary Data Report, NHSN protocol requires, at the time of publication, the code shall be selected from [Codes for MDRO and CDI Summary Data LTCF (2.16.840.1.113883.10.20.5.1.5.9.2)](#Codes_for_MDRO_and_CDI_Summary_Data_LTC) (CONF:4544-31332).</sch:assert>
+      <sch:assert id="a-4544-31334" test="cda:statusCode[@code='completed']">This statusCode SHALL contain exactly one [1..1] @code="completed" Completed (CodeSystem: HL7ActStatus urn:oid:2.16.840.1.113883.5.14) (CONF:4544-31334).</sch:assert>
+      <sch:assert id="a-4544-31335-c" test="(cda:value/@xsi:type='PQ' and cda:value/@unit='d') or (cda:value/@xsi:type='INT') or (cda:value/@xsi:type='CD')">If the observation reports a number of days, the value of value/xsi:type SHALL be PQ and the value of value/@unit SHALL be d. If the observation reports a number of residents, episodes, or events the value of value/@xsi:type SHALL be INT. If the value is a code, the value of value/@xsi:type SHALL be CD (CONF:4544-31335).</sch:assert>
+      <sch:assert id="a-4544-31324" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6) (CONF:4544-31324).</sch:assert>
+      <sch:assert id="a-4544-31325" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001) (CONF:4544-31325).</sch:assert>
+      <!--No schematron defined for primitive constraint 194390 on template 12678-->
+      <sch:assert id="a-4544-31430-c" test="not(tested)">If this is a MDRO and CDI Monthly Summary Data Report, NHSN protocol requires, at the time of publication, the code shall be selected from [Codes for Denominators for Long Term Care Locations LTCF (2.16.840.1.113883.10.20.5.1.5.9.4)](#Codes_for_Denominators_for_Long_Term_Ca) (CONF:4544-31430).</sch:assert>
+      <!--No schematron defined for primitive constraint 194391 on template 12678-->
+      <sch:assert id="a-4544-31431-c" test="not(tested)">If this is a MDRO and CDI Monthly Summary Data Report, NHSN protocol requires, at the time of publication, the code shall be selected from [Codes for Prevention Process Measures LTCF (2.16.840.1.113883.10.20.5.1.5.9.5)](#Codes_for_Prevention_Process_Measures_L) (CONF:4544-31431).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-CLOSEDTEMPLATE">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors-CL-abstract" abstract="true">
+      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
+<!-- <sch:assert id="a-4544-12678-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.14:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors-CL" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-errors-CL-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31337" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31337) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.3.15" (CONF:4544-31344). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-31351).</sch:assert>
+      <sch:assert id="a-4544-31338" test="count(cda:participant[@typeCode='LOC'][count(cda:participantRole[@classCode='SDLOC'])=1])=1">SHALL contain exactly one [1..1] participant (CONF:4544-31338) such that it SHALL contain exactly one [1..1] participantRole (CONF:4544-31339). This participantRole SHALL contain exactly one [1..1] @classCode="SDLOC" Service Delivery Location (CodeSystem: HL7EntityClass urn:oid:2.16.840.1.113883.5.41 STATIC) (CONF:4544-31346). SHALL contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: HL7ParticipationType urn:oid:2.16.840.1.113883.5.90 STATIC) (CONF:4544-31345).</sch:assert>
+      <sch:assert id="a-4544-31340" test="count(cda:entryRelationship[@typeCode='COMP']) &gt; 0">SHALL contain at least one [1..*] entryRelationship (CONF:4544-31340) such that it SHALL contain exactly one [1..1] @typeCode="COMP" Has component (CodeSystem: HL7ActRelationshipType urn:oid:2.16.840.1.113883.5.1002 STATIC) (CONF:4544-31350).</sch:assert>
+      <sch:assert id="a-4544-31342" test="@classCode='ENC'">SHALL contain exactly one [1..1] @classCode="ENC" Encounter (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:4544-31342).</sch:assert>
+      <sch:assert id="a-4544-31343" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:4544-31343).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31338-branch-31338-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31362-branch-31338" test="cda:participantRole[count(cda:id)=1]">This participantRole SHALL contain exactly one [1..1] id (CONF:4544-31362).</sch:assert>
+      <sch:assert id="a-4544-31363-branch-31338" test="cda:participantRole/cda:id[@root]">This id SHALL contain exactly one [1..1] @root (CONF:4544-31363).</sch:assert>
+      <sch:assert id="a-4544-31364-branch-31338" test="cda:participantRole/cda:id[@extension]">This id SHALL contain exactly one [1..1] @extension (CONF:4544-31364).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31338-branch-31338-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']]/cda:participant[cda:participantRole[@classCode='SDLOC']][@typeCode='LOC']">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31338-branch-31338-errors-abstract" />
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31340-branch-31340-errors-abstract" abstract="true">
+      <sch:assert id="a-4544-31341-branch-31340" test="count(cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2023-02-01']])=1">SHALL contain exactly one [1..1] Summary Data Observation LTCF (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.14:2023-02-01) (CONF:4544-31341).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31340-branch-31340-errors" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']]/cda:entryRelationship[@typeCode='COMP']">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-31340-branch-31340-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-CLOSEDTEMPLATE">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors-CL-abstract" abstract="true">
+      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
+<!-- <sch:assert id="a-4544-12679-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.15:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors-CL" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-errors-CL-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors-abstract" abstract="true">
+      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-errors-abstract" />
+      <sch:assert id="a-4544-31187" test="count(cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3'][@extension='2023-02-01'])=1">SHALL contain exactly one [1..1] templateId (CONF:4544-31187) such that it SHALL contain exactly one [1..1] @root="2.16.840.1.113883.10.20.5.1.2.3" (CONF:4544-31193). SHALL contain exactly one [1..1] @extension="2023-02-01" (CONF:4544-31194).</sch:assert>
+      <sch:assert id="a-4544-31188" test="count(cda:code)=1">SHALL contain exactly one [1..1] code (CONF:4544-31188).</sch:assert>
+      <sch:assert id="a-4544-31191" test="count(cda:entry[count(cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']])=1])=1">SHALL contain exactly one [1..1] entry (CONF:4544-31191) such that it SHALL contain exactly one [1..1] Summary Encounter LTCF (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.5.1.3.15:2023-02-01) (CONF:4544-31352).</sch:assert>
+      <sch:assert id="a-4544-31195" test="cda:code[@code='51900-9']">This code SHALL contain exactly one [1..1] @code="51900-9" Summary Data Section (CONF:4544-31195).</sch:assert>
+      <sch:assert id="a-4544-31196" test="cda:code[@codeSystem='2.16.840.1.113883.6.1']">This code SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:4544-31196).</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-CLOSEDTEMPLATE">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors-CL-abstract" abstract="true">
+      <!-- SG: Supressed closed template checking due to flagging "parents of parent" as invalid. -->
+<!-- <sch:assert id="a-4544-12680-CL" test="count(.//cda:templateId[not(@root = '2.16.840.1.113883.10.20.5.1.2.3' and @extension = '2023-02-01') and @root != '2.16.840.1.113883.10.20.5.4.26' and @root != '2.16.840.1.113883.10.20.5.4.26' and not(@root = '2.16.840.1.113883.10.20.5.1.3.15' and @extension = '2023-02-01') and not(@root = '2.16.840.1.113883.10.20.5.1.3.14' and @extension = '2023-02-01')])=0">'urn:hl7ii:2.16.840.1.113883.10.20.5.1.2.3:2023-02-01' is a closed template, only defined templates are allowed.</sch:assert> -->
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors-CL" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-errors-CL-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-warnings">
@@ -839,7 +844,7 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:assert id="a-81-7489" test="count(cda:value[@xsi:type='CD'])=1">SHOULD contain zero or one [0..1] value with @xsi:type="CD" (CONF:81-7489).</sch:assert>
       <sch:assert id="a-81-15985" test="not(cda:value[@xsi:type='CD']) or cda:value[@xsi:type='CD'][@code]">The value, if present, SHOULD contain zero or one [0..1] @code, which SHOULD be selected from ValueSet Problem urn:oid:2.16.840.1.113883.3.88.12.3221.7.4 DYNAMIC (CONF:81-15985).</sch:assert>
       <sch:assert id="a-81-15991-c" test="not(tested)">If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”. If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element (CONF:81-15991).</sch:assert>
-      <sch:assert id="a-81-16886-v" test="count(cda:code[@code=document('CDAR2_IG_HAI_LTCF_R1_STU2.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.3.88.12.3221.7.2']/voc:code/@value or @nullFlavor])=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type (SNOMEDCT) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01 (CONF:81-16886).</sch:assert>
+      <sch:assert id="a-81-16886-v" test="count(cda:code[@code=document('CDAR2_IG_HAI_LTCF_R1_STU1_1.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.3.88.12.3221.7.2']/voc:code/@value or @nullFlavor])=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type (SNOMEDCT) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01 (CONF:81-16886).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.19-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.19']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.19-warnings-abstract" />
@@ -868,7 +873,7 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:assert id="a-81-9185" test="count(cda:text)=1">SHOULD contain zero or one [0..1] text (CONF:81-9185).</sch:assert>
       <sch:assert id="a-81-10142-c" test="not(tested)">If the diagnosis is unknown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”.  If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element (CONF:81-10142).</sch:assert>
       <sch:assert id="a-81-15587" test="not(cda:text) or cda:text[count(cda:reference)=1]">The text, if present, SHOULD contain zero or one [0..1] reference (CONF:81-15587).</sch:assert>
-      <sch:assert id="a-81-9045-v" test="count(cda:code[@code=document('CDAR2_IG_HAI_LTCF_R1_STU2.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.3.88.12.3221.7.2']/voc:code/@value or @nullFlavor])=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type (SNOMEDCT) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01 (CONF:81-9045).</sch:assert>
+      <sch:assert id="a-81-9045-v" test="count(cda:code[@code=document('CDAR2_IG_HAI_LTCF_R1_STU1_1.xml')/voc:systems/voc:system[@valueSetOid='2.16.840.1.113883.3.88.12.3221.7.2']/voc:code/@value or @nullFlavor])=1">SHALL contain exactly one [1..1] code, which SHOULD be selected from ValueSet Problem Type (SNOMEDCT) urn:oid:2.16.840.1.113883.3.88.12.3221.7.2 STATIC 2012-06-01 (CONF:81-9045).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.4-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.22.4.4']]">
       <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.22.4.4-warnings-abstract" />
@@ -964,14 +969,6 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.5.62-2018-04-01-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-warnings-abstract" abstract="true">
-      <sch:assert test="."></sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-warnings" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2019-08-01-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.2-2019-08-01-warnings-abstract" abstract="true">
       <sch:assert test="."></sch:assert>
@@ -1016,46 +1013,12 @@ Schematron generated from Trifolia on 2/7/2023
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.2-2019-08-01-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-warnings-abstract" abstract="true">
-      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-warnings-abstract" />
-      <sch:assert test="."></sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-warnings" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2019-08-01-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-warnings-abstract" abstract="true">
-      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.28-warnings-abstract" />
-      <sch:assert test="."></sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-warnings" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2019-08-01-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-warnings-abstract" abstract="true">
       <sch:assert test="."></sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.12' and @extension='2019-08-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.12-2019-08-01-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-warnings-abstract" abstract="true">
-      <sch:assert test="."></sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2019-08-01-warnings-abstract" />
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-warnings">
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-warnings-abstract" abstract="true">
-      <sch:assert test="."></sch:assert>
-    </sch:rule>
-    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-warnings" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2019-08-01']]">
-      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2019-08-01-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.5-2019-08-01-warnings">
@@ -1073,6 +1036,49 @@ Schematron generated from Trifolia on 2/7/2023
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-warnings" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.3' and @extension='2023-02-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-warnings-abstract" abstract="true">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2023-02-01-warnings-abstract" />
+      <sch:assert test="."></sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-warnings" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.1' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2023-02-01-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-warnings-abstract" abstract="true">
+      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.28-warnings-abstract" />
+      <sch:assert test="."></sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-warnings" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.2' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.2-2023-02-01-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-warnings-abstract" abstract="true">
+      <sch:assert test="."></sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.14' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.14-2023-02-01-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-warnings-abstract" abstract="true">
+      <sch:assert test="."></sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-warnings" context="cda:encounter[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.3.15' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.3.15-2023-02-01-warnings-abstract" />
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-warnings">
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-warnings-abstract" abstract="true">
+      <sch:extends rule="r-urn-oid-2.16.840.1.113883.10.20.5.4.26-warnings-abstract" />
+      <sch:assert test="."></sch:assert>
+    </sch:rule>
+    <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-warnings" context="cda:section[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.2.3' and @extension='2023-02-01']]">
+      <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.2.3-2023-02-01-warnings-abstract" />
     </sch:rule>
   </sch:pattern>
 </sch:schema>
