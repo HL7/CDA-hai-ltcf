@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: MDRO and CDI LabID Event Reporting Monthly Summary Data for LTCF 
+        Filename: CDAR2_IG_HAI_LTCFRPT_R1_D1_1_LabIDSummary.xml        
+        Specification: HAI LTCF R1D1.1 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)  
+        
+        Revision History:  
+         2019-09-30 Ballot Recon Updates          Zabrina Gonzaga
+         2020-10-13 Pre-Publication Updates       Zabrina Gonzaga
+         2020-10-21 Publication Updates           Sarah Gaunt
+         2023-02-20 Unballoted IG Update updates  Sarah Gaunt
+          - Updated template ids etc.
+          - Added codes for extra counts
+          
+         
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:voc="http://www.lantanagroup.com/voc">
+    <!-- Comments precede their subject -->
+
+    <!-- This is a population-summary report. -->
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <!-- [HAI Normative R1] Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- [HAI Normative R1] HAI Population Summary Report Generic Constraints  -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.28" />
+    <!-- [HAI LTCF R1D1.1] LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures (V2) -->
+    <templateId root="2.16.840.1.113883.10.20.5.1.1.2" extension="2023-02-01" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+    <title>LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures</title>
+    <!-- Document-creation date -->
+    <effectiveTime value="20230201" />
+    <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+    <languageCode code="en-US" />
+    <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="33" />
+    <!-- the original -->
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- This is a population summary report -->
+            <id nullFlavor="NA" />
+        </patientRole>
+    </recordTarget>
+    <!-- The author of a population summary report is the software forming the message. -->
+    <author>
+        <time value="20230201" />
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1" extension="aSoftwareID" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- Legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20230201" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <!-- The location participant (facility) -->
+    <participant typeCode="LOC" contextControlCode="OP">
+        <associatedEntity classCode="SDLOC">
+
+            <!--root is ID of facility -->
+            <!-- extension is the location code 'FACWIDEIN' -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="FACWIDEIN" />
+        </associatedEntity>
+    </participant>
+    <!-- The group participant in a population-summary report-->
+    <participant typeCode="SBJ" contextControlCode="OP">
+        <associatedEntity classCode="PRS">
+            <code codeSystem="2.16.840.1.113883.6.96" code="389109008" displayName="group" />
+        </associatedEntity>
+    </participant>
+    <!-- The period reported -->
+    <documentationOf>
+        <serviceEvent classCode="CASE">
+            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1891-1" displayName="Summary data reporting MDRO and CDI LabID Event Monthly Summary Data for LTCF" />
+            <effectiveTime>
+                <!-- the first day of the period reported -->
+                <low value="20230101" />
+                <!-- the last day of the period reported -->
+                <high value="20230131" />
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+     Summary Data Section LTCF 
+     ******************************************************** -->
+            <component>
+                <section>
+                    <!-- [HAI Normative R1] HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI LTCF R1D1.1] Summary Data Section LTCF (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.3" extension="2023-02-01" />
+                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51900-9" displayName="Summary Section" />
+                    <title>Summary Data</title>
+                    <text>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Denominators for Long Term Care Locations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Total Resident days</td>
+                                    <td>150 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Urinary Catheter Days</td>
+                                    <td>35 d</td>
+                                </tr>
+                                <tr>
+                                    <td>New Antibiotic Starts for UTI Indication</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of Urine Cultures Ordered</td>
+                                    <td>15</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">MDRO and CDI Lab Event Reporting</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Resident admissions</td>
+                                    <td>20 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Resident days</td>
+                                    <td>100 d</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of admissions on C. difficile treatment</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of C. difficile treatment starts</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Prevention Process Measures</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hand Hygiene Performed</td>
+                                    <td>170</td>
+                                </tr>
+                                <tr>
+                                    <td>Hand Hygiene Indicated</td>
+                                    <td>172</td>
+                                </tr>
+                                <tr>
+                                    <td>Gown and Gloves Used</td>
+                                    <td>120</td>
+                                </tr>
+                                <tr>
+                                    <td>Gown and Gloves Indicated</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <!-- [HAI LTCF R1D1.1] Summary Encounter LTCF (V2) -->
+                            <templateId root="2.16.840.1.113883.10.20.5.1.3.15" extension="2023-02-01" />
+                            <!-- the location id and type -->
+                            <participant typeCode="LOC">
+                                <participantRole classCode="SDLOC">
+                                    <!-- In-facility locations, Facwidein require the root with an extension and code element. -->
+                                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="FACWIDEIN" />
+                                    <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1250-0" displayName="Facility-Wide Inpatient (FACWIDEIN)" />
+                                </participantRole>
+                            </participant>
+
+                            <!-- Denominators for Long Term Care Locations -->
+                            <!-- Total Resident Days -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1345-8" displayName="Total Resident days" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="PQ" unit="d" value="150" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Urinary Cathether Days -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1853-1" displayName="Number of urinary catheter days" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="PQ" unit="d" value="35" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- New Antibiotic Starts for UTI Indication -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1343-3" displayName="New Antibiotic Starts for UTI Indication" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="12" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number of Urine Cultures Ordered -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1344-1" displayName="Number of Urine Cultures Ordered" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="15" />
+                                </observation>
+                            </entryRelationship>
+
+                            <!-- MDRO & CDI Lab Event Reporting -->
+                            <!-- Resident Admissions -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1370-6" displayName="Resident Admissions" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="20" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Resident Days -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1369-8" displayName="Resident days" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="PQ" unit="d" value="100" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number of Resident admissions on C. diff Treatment -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1371-4" displayName="Number of admissions on C. Diff treatment" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="8" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Number of residents started on antibiotic treatment for C.diff -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1372-2" displayName="Number of residents started on antibiotic treatment for C.Diff " />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="2" />
+                                </observation>
+                            </entryRelationship>
+
+                            <!-- Prevention Process Measures -->
+                            <!-- Hand Hygiene Performed -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1865-5" displayName="Number of observations in which hand hygiene was performed" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="170" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Hand Hygiene Indicated -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1864-8" displayName="Number of observations in which hand hygiene was indicated" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="172" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Gown and Gloves Used -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1867-1" displayName="Number of observations in which gown and gloves were used" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="120" />
+                                </observation>
+                            </entryRelationship>
+                            <!-- Gown and Gloves Indicated -->
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- [HAI LTCF R1D1.1] Summary Data Observation LTCF (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.14" extension="2023-02-01" />
+                                    <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="1866-3" displayName="Number of observations in which the use of gown and gloves was indicated" />
+                                    <statusCode code="completed" />
+                                    <value xsi:type="INT" value="120" />
+                                </observation>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+          ********************************************************
+          Report No Events Section
+          ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- [HAI Normative R1]HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R2D1] Report No Events Section -->
+                    <templateId root="2.16.840.1.113883.10.20.5.5.62" extension="2018-04-01" />
+                    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="90252-8" displayName="Report No Events Section" />
+                    <title>Report No Events</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Report No Events: LabID Event (All specimens): VRE</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- [HAI R2D1] Report No Events -->
+                            <templateId root="2.16.840.1.113883.10.20.5.6.249" extension="2018-04-01" />
+                            <code codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" code="3033-8" displayName="Report no labID event - All specimens - Vancomycin resistant Enterococcus" />
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
