@@ -37,7 +37,8 @@
     <!-- [HAI LTCF R1D1.1] LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures (V2) -->
     <templateId root="2.16.840.1.113883.10.20.5.1.1.2" extension="2023-02-01" />
     <!-- Document ID (extension) is scoped by vendor/software -->
-    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+    <!--<id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />-->
+    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" nullFlavor="UNK" />
     <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
     <title>LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures</title>
     <!-- Document-creation date -->
