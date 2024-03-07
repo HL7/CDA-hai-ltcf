@@ -1,0 +1,176 @@
+<!--
+        Title: Antimicrobial Use Administrations Report in LTCF
+        Filename: CDAR2_IG_HAI_AULTC_E1_2024JAN_Orders_and_Administrations.xml
+        
+        Specification: 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+-->
+
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
+    xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"
+    xmlns:voc="http://www.lantanagroup.com/voc">
+    <!-- This is a single-person report. -->
+    <realmCode code="US"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25"/>
+    <!-- Conformant to HAI Single-Person Report Generic Constraints (V4) -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-12-01"/>
+    <!--  [HAI-LTCF-AU] Conformant to HAI Antimicrobial Use Report for LTCF -->
+    <templateId root="2.16.840.1.113883.10.20.5.2.1.1" extension="2024-01-01"/>
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201"/>
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7"
+        displayName="Healthcare Associated Infection Report"/>
+    <title>Antimicrobial Use Report</title>
+    <effectiveTime value="20230701"/>
+    <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+    <languageCode code="en-US"/>
+    <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31"/>
+    <!-- This is second version of this document 
+       (it has replaced a previous document - see relatedDocument)-->
+    <versionNumber value="2"/>
+    <recordTarget>
+        <patientRole>
+            <!-- Resident identifier - scoped by facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456"/>
+            <patient>
+                <name>
+                    <family>Nuclear</family>
+                    <given>Ned</given>
+                </name>
+                <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="M"/>
+                <!-- Resident Date of Birth -->
+                <birthTime value="19541125"/>
+                <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<raceCode nullFlavor="ASKU "/>-->
+                <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
+                    codeSystemName="Race &amp; Ethnicity - CDC"/>
+                <!-- If multiple races -->
+                <sdtc:raceCode code="1002-5" displayName="American Indian/Alaska Native"
+                    codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+                <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<ethnicGroupCode nullFlavor="UNK" />-->
+                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
+                    codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"
+                />
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- Author/authenticator may be a software or person.
+       This author is scoped by facility. -->
+    <author>
+        <time value="20230701"/>
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID"/>
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11"/>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- The related document that this document has replaced -->
+    <relatedDocument typeCode="RPLC">
+        <parentDocument>
+
+            <!-- The ClinicalDoucment/id of the document being replaced -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="12345678"/>
+            <!-- The setId of this set of documents -->
+            <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="21"/>
+            <!-- The replaced document was the first version of the document -->
+            <versionNumber value="1"/>
+        </parentDocument>
+    </relatedDocument>
+    <componentOf>
+        <encompassingEncounter> 
+            <effectiveTime>
+                <!-- 1st day of reporting month -->
+                <low value="20230601"/>
+                <!-- Last day of reporting month -->
+                <high value="20230630"/>
+            </effectiveTime>
+            <dischargeDispositionCode value="home"/>
+            <location>
+                <healthCareFacility>
+                    <!-- Facility ID -->
+                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W"/>
+                    <code codeSystem="2.16.840.1.113883.6.259"
+                        codeSystemName="HL7 HealthCareServiceLocation" code="1258-3"
+                        displayName="Long Term Care Facility General Nursing Unit"/>
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+
+            <!-- ********************************************************
+                Plan of Treatment Section in a LTCF Report
+              ******************************************************** -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
+                    <!-- Plan of Treatment Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.7" extension="2024-01-01"/> 
+                    ...
+                </section>
+            </component>
+
+            <!-- ********************************************************
+                Medications Section in a LTCF Report
+              ******************************************************** -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
+                    <!-- Medications Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.8" extension="2024-01-01"/> 
+                    ...
+                </section>
+            </component>
+
+            <!-- ********************************************************
+     Encounters Section in a LTCF Report (V2)
+     ******************************************************** -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
+                    <!-- Encounters Section in an LTCF Report (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.2" extension="2024-01-01"/> 
+                    ...
+                </section>
+            </component>
+
+            <!-- 
+            ******************************************************** 
+           NHSN Social History Section
+            ******************************************************** 
+      -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
+                    <!-- [HAI R4D2] NHSN Social History Section -->
+                    <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01"/> 
+                    ...
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
