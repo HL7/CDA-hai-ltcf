@@ -23,6 +23,8 @@
     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
     <!-- Conformant to Healthcare Associated Infection Report -->
     <templateId root="2.16.840.1.113883.10.20.5.4.25"/>
+    <!-- Conformant to HAI Single-Person Report Generic Constraints (V4) -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-12-01"/>
     <!--  [HAI-LTCF-AU] Conformant to HAI Antimicrobial Use Report for LTCF -->
     <templateId root="2.16.840.1.113883.10.20.5.2.1.1" extension="2024-01-01"/>
     <!-- Document ID (extension) is scoped by vendor/software -->
@@ -104,14 +106,11 @@
     </relatedDocument>
     <componentOf>
         <encompassingEncounter>
-            <!-- A Long term care encounter -->
-            <code codeSystem="2.16.840.1.113883.5.4" code="IMP" codeSystemName="HL7 ActCode"
-                displayName="Inpatient Encounter"/>
             <effectiveTime>
-                <!--  Date of Current Admission to Facility -->
-                <low value="20230620"/>
-                <!-- Date of Discharge -->
-                <high value="20230701"/>
+                <!-- 1st day of reporting month -->
+                <low value="20230601"/>
+                <!-- Last day of reporting month -->
+                <high value="20230630"/>
             </effectiveTime>
             <dischargeDispositionCode value="home"/>
             <location>
@@ -128,6 +127,22 @@
      ******************************************************** -->
     <component>
         <structuredBody>
+            
+            <!-- ********************************************************
+                Plan of Treatment Section in a LTCF Report - This section has NO information to report for this resident for this month, as indicated by nullFlavor="NI"
+              ******************************************************** -->
+            <component>
+                <section nullFlavor="NI">
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- Plan of Treatment Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.7" extension="2024-01-01"/>
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="Plan of care note"/>
+                    <title>Planned Antimicrobial Activity Section</title>
+                    <text>No Information</text>
+                </section>
+            </component>
             
             <!-- ********************************************************
                 Medications Section in a LTCF Report
@@ -213,8 +228,8 @@
                             <!-- Encounter Activity in a LTCF Report -->
                             <templateId root="2.16.840.1.113883.10.20.5.2.3.1" extension="2024-01-01" />
                             <id nullFlavor="NA" />
-                            <code code="1373-0" displayName="Date first admitted to facility" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
                             <effectiveTime>
+                                <!-- Date of admission is defined as the date the resident entered the facility. When residents leave the facility for 3 or more consecutive days, distinct encounter activity entries should be used to document these stays-->
                                 <!-- Date of admission for the encounter -->
                                 <low value="20230601" />
                                 <!-- Date of discharge for the encounter -->

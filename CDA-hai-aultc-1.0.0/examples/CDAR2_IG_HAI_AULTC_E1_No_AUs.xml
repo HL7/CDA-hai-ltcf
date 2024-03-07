@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-        Title: Antimicrobial Use Order Report in LTCF
-        Filename: CDAR2_IG_HAI_AULTC_E1_2024JAN_AU_Orders.xml
+        Title: No Antimicrobial Ordered or Administered Report in LTCF
+        Filename: CDAR2_IG_HAI_AULTC_E1_2024JAN_No_AUs.xml
         
         Specification: 
         
@@ -15,16 +15,16 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3"
     xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc"
     xmlns:voc="http://www.lantanagroup.com/voc">
-
+    
     <!-- Comments precede their subject -->
-
+    
     <!-- This is a single-person report. -->
     <realmCode code="US"/>
     <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
     <!-- Conformant to Healthcare Associated Infection Report -->
     <templateId root="2.16.840.1.113883.10.20.5.4.25"/>
-    <!-- Conformant to HAI Single-Person Report Generic Constraints (V3) -->
-    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-02-01"/>
+    <!-- Conformant to HAI Single-Person Report Generic Constraints (V4) -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2023-12-01"/>
     <!--  [HAI-LTCF-AU] Conformant to HAI Antimicrobial Use Report for LTCF -->
     <templateId root="2.16.840.1.113883.10.20.5.2.1.1" extension="2024-01-01"/>
     <!-- Document ID (extension) is scoped by vendor/software -->
@@ -32,7 +32,7 @@
     <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7"
         displayName="Healthcare Associated Infection Report"/>
     <title>Antimicrobial Use Report</title>
-    <effectiveTime value="20230630"/>
+    <effectiveTime value="20230701"/>
     <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
     <languageCode code="en-US"/>
     <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31"/>
@@ -71,7 +71,7 @@
     <!-- Author/authenticator may be a software or person.
        This author is scoped by facility. -->
     <author>
-        <time value="20230630"/>
+        <time value="20230701"/>
         <assignedAuthor>
             <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID"/>
         </assignedAuthor>
@@ -86,19 +86,30 @@
     </custodian>
     <!-- legal authenticator is scoped by facility -->
     <legalAuthenticator>
-        <time value="20230630"/>
+        <time value="20220807"/>
         <signatureCode code="S"/>
         <assignedEntity>
             <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID"/>
         </assignedEntity>
     </legalAuthenticator>
+    <!-- The related document that this document has replaced -->
+    <relatedDocument typeCode="RPLC">
+        <parentDocument>
+            <!-- The ClinicalDoucment/id of the document being replaced -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="12345678"/>
+            <!-- The setId of this set of documents -->
+            <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="21"/>
+            <!-- The replaced document was the first version of the document -->
+            <versionNumber value="1"/>
+        </parentDocument>
+    </relatedDocument>
     <componentOf>
         <encompassingEncounter>
             <effectiveTime>
-                <!--  Date of Current Admission to Facility -->
-                <low value="20230620"/>
-                <!-- Date of Discharge -->
-                <high value="20230701"/>
+                <!-- 1st day of reporting month -->
+                <low value="20230601"/>
+                <!-- Last day of reporting month -->
+                <high value="20230630"/>
             </effectiveTime>
             <dischargeDispositionCode value="home"/>
             <location>
@@ -117,10 +128,10 @@
         <structuredBody>
             
             <!-- ********************************************************
-                Plan of Treatment Section in a LTCF Report
+                Plan of Treatment Section in a LTCF Report - This section has NO information to report for this resident for this month, as indicated by nullFlavor="NI"
               ******************************************************** -->
             <component>
-                <section>
+                <section nullFlavor="NI">
                     <!-- HAI Section Generic Constraints -->
                     <templateId root="2.16.840.1.113883.10.20.5.4.26" />
                     <!-- Plan of Treatment Section in a LTCF Report -->
@@ -128,59 +139,25 @@
                     <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
                         displayName="Plan of care note"/>
                     <title>Planned Antimicrobial Activity Section</title>
-                    <text>
-                            <table>
-                                <tr>
-                                    <th>Medication</th>
-                                    <th>Planned Antimicrobial start date</th>
-                                    <th>Planned Antimicrobial end date</th>
-                                </tr>
-                                <tr>
-                                    <td>cefadroxil 25 MG/ML Oral Suspension</td>
-                                    <td>June 2nd, 2023</td>
-                                    <td>June 6th, 2023</td>
-                                </tr>
-                            </table>
-                    </text>
-                    <entry>
-                        <!-- Planned Medication Activity in a LTCF Report-->
-                        <substanceAdministration moodCode="INT" classCode="SBADM">
-                            <templateId root="2.16.840.1.113883.10.20.5.1.3.17"
-                                extension="2024-01-01"/>
-                            <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
-                            <text>cefadroxil 25 MG/ML Oral Suspension</text>
-                            <!-- status shall be 'active' -->
-                            <statusCode code="active"/>
-                            <!-- The effectiveTime in a planned medication activity represents the time that the medication activity should occur. -->
-                            <effectiveTime>
-                                <!-- Planned antimicrobial start date -->
-                                <low value="202300602"/>
-                                <!-- Planned antimicrobial stop date -->
-                                <high value="20230606"/>
-                            </effectiveTime>
-                            <!-- medication administration route -->
-                            <routeCode code="26643006" displayName="Oral route (qualifier value)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
-                            <consumable>
-                                <manufacturedProduct classCode="MANU">
-                                    <!-- AU Medication Information in a LTCF Report -->
-                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.18"
-                                        extension="2024-01-01"/>
-                                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
-                                    <manufacturedMaterial>
-                                        <code code="1665021" displayName="ceftriaxone 1000 MG Injection"
-                                            codeSystem="2.16.840.1.113883.6.88"
-                                            codeSystemName="RxNorm"/>
-                                    </manufacturedMaterial>
-                                    <manufacturerOrganization>
-                                        <name>Medication Factory Inc.</name>
-                                    </manufacturerOrganization>
-                                </manufacturedProduct>
-                            </consumable>
-                        </substanceAdministration>
-                    </entry>
+                    <text>No Information</text>
                 </section>
             </component>
             
+            <!-- ********************************************************
+                Medications Section in a LTCF Report
+              ******************************************************** -->
+            <component>
+                <section nullFlavor="NI">
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- Medications Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.8" extension="2024-01-01"/>
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+                    <title>Antimicrobial Treatment Administrations</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+
             <!-- ********************************************************
      Encounters Section in a LTCF Report (V2)
      ******************************************************** -->
@@ -211,8 +188,8 @@
                             <!-- Encounter Activity in a LTCF Report -->
                             <templateId root="2.16.840.1.113883.10.20.5.2.3.1" extension="2024-01-01" />
                             <id nullFlavor="NA" />
-                            <code code="1373-0" displayName="Date first admitted to facility" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" />
                             <effectiveTime>
+                                <!-- Date of admission is defined as the date the resident entered the facility. When residents leave the facility for 3 or more consecutive days, distinct encounter activity entries should be used to document these stays-->
                                 <!-- Date of admission for the encounter -->
                                 <low value="20230601" />
                                 <!-- Date of discharge for the encounter -->
@@ -234,7 +211,7 @@
                 <section>
                     <!-- HAI Section Generic Constraints -->
                     <templateId root="2.16.840.1.113883.10.20.5.4.26" />
-                    <!-- NHSN Social History Section -->
+                    <!-- [HAI R4D2] NHSN Social History Section -->
                     <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
                     <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
                     <title>NHSN Social History Section</title>
