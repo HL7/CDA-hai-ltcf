@@ -1,0 +1,37 @@
+This readme is included in a zip file which packages the 1st unballoted STU update of: 
+HL7 CDA® R2 Implementation Guide: 
+National Healthcare Safety Network (NHSN) Healthcare Associated Infection (HAI) Reports for Antimicrobial Use (AU) from Long Term Care Facilities (HAI-AULTC-CDA), Edition 1, US Realm, STU 1.
+Please extract and place all of the supplied files in a folder together for use.
+
+The package was prepared by Lantana Consulting Group, Inc.
+
+NOTE: The date specified in this README file is the Lantana Consulting Group delivery date for this file package. 
+Dates on the Implementation Guide cover page and footer will change when the Implementation Guide is balloted or published through HL7. 
+
+========================
+Contents of this package:
+_README.txt
+
+--Implementation Guide files--
+CDAR2_IG_HAI_AULTC_E1_STU1_2024JAN_Vol1.pdf    The NHSN Healthcare Associated Infection (HAI) AU from Long Term Care Facility (AULTC) Implementation Guide (IG) background material
+CDAR2_IG_HAI_AULTC_E1_STU1_2024JAN_Vol2.pdf    The NHSN Healthcare Associated Infection (HAI) AU from Long Term Care Facility (AULTC) computable constraints with example code (Figures) and vocabulary OID listing 
+
+======================== Github ========================
+
+You will find sample files,schematron validation files, stylesheets and the CDA schema in Git: https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0
+
+-- Sample files ---
+examples/CDAR2_IG_HAI_AULTC_E1_No_AUs.xml           Example of no antimicrobial treatment orders or administrations (i.e. LTC encounter only)
+examples/CDAR2_IG_HAI_AULTC_E1_Orders.xml           Example of antimicrobial treatment orders
+examples/CDAR2_IG_HAI_AULTC_E1_Administrations.xml  Example of antimicrobial treatment administrations
+examples/CDAR2_IG_HAI_AULTC_E1_Orders_AND_Admins.xml  Example of antimicrobial treatment administrations
+
+
+-- Schematron validation files–
+validation/CDAR2_IG_HAI_AULTC_E1_2024JAN_sch.sch            Schematron validation file for HAI LTCF IG 
+validation/voc.xml		                            Associated vocabulary file for HAI LTCF IG            
+
+--schema--
+The latest release of the CDA Schema can be downloaded from GitHub:  https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions/SDTC
+                           
+Jan 2024
