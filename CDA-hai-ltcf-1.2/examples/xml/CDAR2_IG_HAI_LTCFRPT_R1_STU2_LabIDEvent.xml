@@ -77,6 +77,10 @@
                 <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Hispanic or Latino" />
                 <!-- Added ability to record multiple ethnicities -->
                 <sdtc:ethnicGroupCode code="2156-8" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Costa Rican" />
+                <languageCommunication>
+                    <languageCode code="en" />
+                    <preferenceInd value="true" />
+                </languageCommunication>
             </patient>
         </patientRole>
     </recordTarget>
