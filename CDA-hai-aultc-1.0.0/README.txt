@@ -21,15 +21,15 @@ CDAR2_IG_HAI_AULTC_STU1_Vol2_Templates_and_Supporting.pdf    The NHSN Healthcare
 You will find sample files,schematron validation files, stylesheets and the CDA schema in Git: https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0
 
 -- Sample files ---
-examples/CDAR2_IG_HAI_AULTC_STU1_No_AUs.xml           Example of no antimicrobial treatment orders or administrations (i.e. LTC encounter only)
-examples/CDAR2_IG_HAI_AULTC_STU1_Orders.xml           Example of antimicrobial treatment orders
-examples/CDAR2_IG_HAI_AULTC_STU1_Administrations.xml  Example of antimicrobial treatment administrations
-examples/CDAR2_IG_HAI_AULTC_STU1_Orders_and_Admins.xml  Example of antimicrobial treatment administrations
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/examples/CDAR2_IG_HAI_AULTC_STU1_No_AUs.xml           Example of no antimicrobial treatment orders or administrations (i.e. LTC encounter only)
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/examples/CDAR2_IG_HAI_AULTC_STU1_Orders.xml           Example of antimicrobial treatment orders
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/examples/CDAR2_IG_HAI_AULTC_STU1_Administrations.xml  Example of antimicrobial treatment administrations
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/examples/CDAR2_IG_HAI_AULTC_STU1_Orders_and_Admins.xml  Example of antimicrobial treatment administrations
 
 
 -- Schematron validation files–
-validation/CDAR2_IG_HAI_AULTC_STU1_sch.sch            Schematron validation file for HAI LTCF IG 
-validation/voc.xml		                            Associated vocabulary file for HAI LTCF IG            
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/validation/CDAR2_IG_HAI_AULTC_STU1_sch.sch            Schematron validation file for HAI LTCF IG 
+https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/validation/hai_voc.xml		                            Associated vocabulary file for HAI LTCF IG            
 
 --schema--
 The latest release of the CDA Schema can be downloaded from GitHub:  https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions/SDTC
