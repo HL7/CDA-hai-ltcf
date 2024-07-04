@@ -105,13 +105,14 @@
     </relatedDocument>
     <componentOf>
         <encompassingEncounter>
-            <effectiveTime>
+            <effectiveTime xsi:type="IVL_TS">
                 <!-- 1st day of reporting month -->
                 <low value="20230601"/>
                 <!-- Last day of reporting month -->
                 <high value="20230630"/>
             </effectiveTime>
-            <dischargeDispositionCode value="home"/>
+            <dischargeDispositionCode code="306689006" displayName="Discharge to home (procedure" codeSystem="2.16.840.1.113883.6.96"
+                codeSystemName="SNOMED CT" />
             <location>
                 <healthCareFacility>
                     <!-- Facility ID -->
@@ -171,16 +172,19 @@
                     <title>Encounters</title>
                     <text>
                         <table>
-                            <tr>
-                                <th>Admission Date</th>
-                                <th>Discharge Date</th>
-                                <th>Discharge Disposition</th>
-                            </tr>
-                            <tr>
-                                <td>June 1, 2023</td>
-                                <td>June 9, 2023</td>
-                                <td>Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>Admission Date</th>
+                                    <th>Discharge Date</th>
+                                    <th>Discharge Disposition</th>
+                                </tr>
+                                <tr>
+                                    <td>June 1, 2023</td>
+                                    <td>June 9, 2023</td>
+                                    <td>Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare</td>
+                                </tr>
+                            </tbody>
+                            
                         </table>
                     </text>
                     <entry typeCode="DRIV">
@@ -188,7 +192,7 @@
                             <!-- Encounter Activity in a LTCF Report -->
                             <templateId root="2.16.840.1.113883.10.20.5.2.3.1" extension="2024-01-01" />
                             <id nullFlavor="NA" />
-                            <effectiveTime>
+                            <effectiveTime xsi:type="IVL_TS">
                                 <!-- Date of admission is defined as the date the resident entered the facility. When residents leave the facility for 3 or more consecutive days, distinct encounter activity entries should be used to document these stays-->
                                 <!-- Date of admission for the encounter -->
                                 <low value="20230601" />
@@ -237,7 +241,7 @@
                             <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
                             <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
                             <statusCode code="completed" />
-                            <effectiveTime>
+                            <effectiveTime xsi:type="IVL_TS">
                                 <low value="20230601" />
                             </effectiveTime>
                             <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
