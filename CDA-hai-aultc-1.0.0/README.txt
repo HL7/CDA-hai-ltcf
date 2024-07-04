@@ -32,5 +32,6 @@ https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/validation/CDA
 https://github.com/HL7/CDA-hai-ltcf/tree/main/CDA-hai-aultc-1.0.0/validation/hai_voc.xml		                            Associated vocabulary file for HAI LTCF IG            
 
 --schema--
-The latest release of the CDA Schema can be downloaded from GitHub:  https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions/SDTC
+The latest release of the CDA Schema can be used directly at https://raw.githubusercontent.com/HL7/CDA-core-2.0/master/schema/extensions/SDTC/infrastructure/cda/CDA_SDTC.xsd 
+as well as downloaded from GitHub: https://github.com/HL7/cda-core-2.0/tree/master/schema/extensions/SDTC
                           
