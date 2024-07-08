@@ -159,7 +159,7 @@
                             <!-- The effectiveTime in a planned medication activity represents the time that the medication activity should occur. -->
                             <effectiveTime xsi:type="IVL_TS">
                                 <!-- Planned antimicrobial start date -->
-                                <low value="202300602"/>
+                                <low value="20230602"/>
                                 <!-- Planned antimicrobial stop date -->
                                 <high value="20230606"/>
                             </effectiveTime>
