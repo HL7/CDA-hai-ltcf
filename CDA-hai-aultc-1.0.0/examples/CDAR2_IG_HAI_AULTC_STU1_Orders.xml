@@ -94,18 +94,21 @@
     </legalAuthenticator>
     <componentOf>
         <encompassingEncounter>
-            <effectiveTime>
+            <effectiveTime xsi:type="IVL_TS">
                 <!-- 1st day of reporting month -->
                 <low value="20230601"/>
                 <!-- Last day of reporting month -->
                 <high value="20230630"/>
             </effectiveTime>
-            <dischargeDispositionCode value="home"/>
+            <dischargeDispositionCode code="306689006" displayName="Discharge to home (procedure"
+                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
             <location>
                 <healthCareFacility>
                     <!-- Facility ID -->
-                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
-                    <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1258-3" displayName="Long Term Care Facility General Nursing Unit" />
+                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W"/>
+                    <code codeSystem="2.16.840.1.113883.6.259"
+                        codeSystemName="HL7 HealthCareServiceLocation" code="1258-3"
+                        displayName="Long Term Care Facility General Nursing Unit"/>
                 </healthCareFacility>
             </location>
         </encompassingEncounter>
@@ -115,21 +118,22 @@
      ******************************************************** -->
     <component>
         <structuredBody>
-            
+
             <!-- ********************************************************
                 Plan of Treatment Section in a LTCF Report
               ******************************************************** -->
             <component>
                 <section>
                     <!-- HAI Section Generic Constraints -->
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
                     <!-- Plan of Treatment Section in a LTCF Report -->
                     <templateId root="2.16.840.1.113883.10.20.5.1.2.7" extension="2024-01-01"/>
                     <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
                         displayName="Plan of care note"/>
                     <title>Planned Antimicrobial Activity Section</title>
                     <text>
-                            <table>
+                        <table>
+                            <tbody>
                                 <tr>
                                     <th>Medication</th>
                                     <th>Planned Antimicrobial start date</th>
@@ -140,7 +144,8 @@
                                     <td>June 2nd, 2023</td>
                                     <td>June 6th, 2023</td>
                                 </tr>
-                            </table>
+                            </tbody>
+                        </table>
                     </text>
                     <entry>
                         <!-- Planned Medication Activity in a LTCF Report-->
@@ -152,14 +157,15 @@
                             <!-- status shall be 'active' -->
                             <statusCode code="active"/>
                             <!-- The effectiveTime in a planned medication activity represents the time that the medication activity should occur. -->
-                            <effectiveTime>
+                            <effectiveTime xsi:type="IVL_TS">
                                 <!-- Planned antimicrobial start date -->
-                                <low value="202300602"/>
+                                <low value="20230602"/>
                                 <!-- Planned antimicrobial stop date -->
                                 <high value="20230606"/>
                             </effectiveTime>
                             <!-- medication administration route -->
-                            <routeCode code="26643006" displayName="Oral route (qualifier value)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+                            <routeCode code="26643006" displayName="Oral route (qualifier value)"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
                             <consumable>
                                 <manufacturedProduct classCode="MANU">
                                     <!-- AU Medication Information in a LTCF Report -->
@@ -167,7 +173,8 @@
                                         extension="2024-01-01"/>
                                     <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8"/>
                                     <manufacturedMaterial>
-                                        <code code="1665021" displayName="ceftriaxone 1000 MG Injection"
+                                        <code code="1665021"
+                                            displayName="ceftriaxone 1000 MG Injection"
                                             codeSystem="2.16.840.1.113883.6.88"
                                             codeSystemName="RxNorm"/>
                                     </manufacturedMaterial>
@@ -180,88 +187,99 @@
                     </entry>
                 </section>
             </component>
-            
+
             <!-- ********************************************************
                 Medications Section in a LTCF Report
               ******************************************************** -->
             <component>
                 <section nullFlavor="NI">
                     <!-- HAI Section Generic Constraints -->
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
                     <!-- Medications Section in a LTCF Report -->
                     <templateId root="2.16.840.1.113883.10.20.5.1.2.8" extension="2024-01-01"/>
-                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use"/>
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="History of Medication Use"/>
                     <title>Antimicrobial Treatment Administrations</title>
                     <text>No Information</text>
                 </section>
             </component>
-            
+
             <!-- ********************************************************
                Encounters Section in a LTCF Report (V2)
                 ******************************************************** -->
             <component>
                 <section>
                     <!-- HAI Section Generic Constraints -->
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
                     <!-- Encounters Section in an LTCF Report (V2) -->
-                    <templateId root="2.16.840.1.113883.10.20.5.1.2.2" extension="2024-01-01" />
-                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="History of Encounters" />
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.2" extension="2024-01-01"/>
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"
+                        displayName="History of Encounters"/>
                     <title>Encounters</title>
                     <text>
                         <table>
-                            <tr>
-                                <th>Admission Date</th>
-                                <th>Discharge Date</th>
-                                <th>Discharge Disposition</th>
-                            </tr>
-                            <tr>
-                                <td>June 1, 2023</td>
-                                <td>June 9, 2023</td>
-                                <td>Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare</td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th>Admission Date</th>
+                                    <th>Discharge Date</th>
+                                    <th>Discharge Disposition</th>
+                                </tr>
+                                <tr>
+                                    <td>June 1, 2023</td>
+                                    <td>June 9, 2023</td>
+                                    <td>Discharged/transferred to a nursing facility certified under
+                                        Medicaid but not certified under Medicare</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </text>
                     <entry typeCode="DRIV">
                         <encounter classCode="ENC" moodCode="EVN">
                             <!-- Encounter Activity in a LTCF Report -->
-                            <templateId root="2.16.840.1.113883.10.20.5.2.3.1" extension="2024-01-01" />
-                            <id nullFlavor="NA" />
-                            <effectiveTime>
+                            <templateId root="2.16.840.1.113883.10.20.5.2.3.1"
+                                extension="2024-01-01"/>
+                            <id nullFlavor="NA"/>
+                            <effectiveTime xsi:type="IVL_TS">
                                 <!-- Date of admission is defined as the date the resident entered the facility. When residents leave the facility for 3 or more consecutive days, distinct encounter activity entries should be used to document these stays-->
                                 <!-- Date of admission for the encounter -->
-                                <low value="20230601" />
+                                <low value="20230601"/>
                                 <!-- Date of discharge for the encounter -->
                                 <high value="20230609"/>
                             </effectiveTime>
-                            <!-- Discharge Disposition for the encounter --> 
-                            <sdtc:dischargeDispositionCode code="64" codeSystem="2.16.840.1.113883.12.112"  codeSystemName="HL7 Discharge Disposition" displayName="Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare"/>
+                            <!-- Discharge Disposition for the encounter -->
+                            <sdtc:dischargeDispositionCode code="64"
+                                codeSystem="2.16.840.1.113883.12.112"
+                                codeSystemName="HL7 Discharge Disposition"
+                                displayName="Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare"
+                            />
                         </encounter>
                     </entry>
                 </section>
             </component>
-            
+
             <!-- ******************************************************** 
            NHSN Social History Section
             ******************************************************** -->
             <component>
                 <section>
                     <!-- HAI Section Generic Constraints -->
-                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26"/>
                     <!-- NHSN Social History Section -->
-                    <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01" />
-                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+                    <templateId root="2.16.840.1.113883.10.20.5.5.81" extension="2022-04-01"/>
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"
+                        displayName="Social History"/>
                     <title>NHSN Social History Section</title>
                     <text>
                         <list>
                             <item>Gender identity<list>
-                                <item>Identifies as female gender (finding)</item>
-                            </list>
+                                    <item>Identifies as female gender (finding)</item>
+                                </list>
                             </item>
                         </list>
                         <list>
                             <item>Birth Sex<list>
-                                <item>Male</item>
-                            </list>
+                                    <item>Male</item>
+                                </list>
                             </item>
                         </list>
                     </text>
@@ -269,26 +287,35 @@
                         <!-- Gender Identity Observation -->
                         <observation classCode="OBS" moodCode="EVN">
                             <!-- [C-CDA R2.1] Social History Observation (V4) -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2022-06-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"
+                                extension="2022-06-01"/>
                             <!-- [C-CDA CG] Gender Identity Observation (V3) -->
-                            <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                            <code code="76691-5" displayName="Gender identity" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                            <statusCode code="completed" />
-                            <effectiveTime>
-                                <low value="20230601" />
+                            <templateId root="2.16.840.1.113883.10.20.34.3.45"
+                                extension="2022-06-01"/>
+                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7"/>
+                            <code code="76691-5" displayName="Gender identity"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20230601"/>
                             </effectiveTime>
-                            <value xsi:type="CD" code="446141000124107" displayName="Identifies as female gender (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+                            <value xsi:type="CD" code="446141000124107"
+                                displayName="Identifies as female gender (finding)"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                         </observation>
                     </entry>
                     <entry>
                         <!-- Birth Sex Observation -->
                         <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
-                            <code code="76689-9" displayName="Sex Assigned At Birth" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                            <statusCode code="completed" />
-                            <value xsi:type="CD" code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.200"
+                                extension="2016-06-01"/>
+                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7"/>
+                            <code code="76689-9" displayName="Sex Assigned At Birth"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="completed"/>
+                            <value xsi:type="CD" code="M" displayName="Male"
+                                codeSystem="2.16.840.1.113883.5.1"
+                                codeSystemName="Administrative Gender"/>
                         </observation>
                     </entry>
                 </section>
