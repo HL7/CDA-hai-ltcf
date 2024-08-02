@@ -346,7 +346,7 @@
                             <templateId extension="2022-06-01" root="2.16.840.1.113883.10.20.22.4.38" />
                             <!-- [C-CDA CG] Gender Identity Observation (V4) -->
                             <templateId extension="2023-05-01" root="2.16.840.1.113883.10.20.34.3.45" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
+                            <id nullFlavor="NA" />
                             <code code="76691-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gender identity" />
                             <statusCode code="completed" />
                             <effectiveTime>
@@ -360,7 +360,6 @@
                         <observation classCode="OBS" moodCode="EVN">
                             <!-- [C-CDA 2.1] Birth Sex Observation -->
                             <templateId extension="2016-06-01" root="2.16.840.1.113883.10.20.22.4.200" />
-                            <id root="5501b49a-32ea-4c78-9c31-3dbe782871b7" />
                             <code code="76689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex Assigned At Birth" />
                             <statusCode code="completed" />
                             <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
@@ -372,8 +371,6 @@
                             If the person needs an interpreter, set the value of @negationInd to false. If the person does not need an interpreter, 
                             set the value of @negationInd to true. -->
                         <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                            <!-- [C-CDA R1.1] Problem Observation -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
                             <!-- [HAI R4STU3] Interpreter Required by Patient Observation -->
                             <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
                             <id nullFlavor="NA" />
@@ -391,8 +388,6 @@
                             If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
                             set the value of @negationInd to true. -->
                         <observation classCode="OBS" moodCode="EVN" negationInd="false">
-                            <!-- [C-CDA R1.1] Problem Observation -->
-                            <templateId root="2.16.840.1.113883.10.20.22.4.4" />
                             <!-- [HAI R4STU3] Interpreter Used by Patient This Encounter Observation -->
                             <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.301" />
                             <id nullFlavor="NA" />
