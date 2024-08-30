@@ -2,7 +2,7 @@
 <!--
 
 THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL LANTANA CONSULTING GROUP LLC, OR ANY OF THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-Schematron generated from Trifolia on 8/1/2024
+Schematron generated from Trifolia on 8/29/2024
 -->
 <sch:schema xmlns:voc="http://www.lantanagroup.com/voc" xmlns:svs="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
   <sch:ns prefix="voc" uri="http://www.lantanagroup.com/voc" />
@@ -11,6 +11,7 @@ Schematron generated from Trifolia on 8/1/2024
   <sch:ns prefix="sdtc" uri="urn:hl7-org:sdtc" />
   <sch:ns prefix="cda" uri="urn:hl7-org:v3" />
   <sch:phase id="errors">
+    <sch:active pattern="p-validate_document-level-templateId-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.5.1-errors" />
     <sch:active pattern="p-urn-oid-2.16.840.1.113883.10.20.22.4.6-errors" />
@@ -114,6 +115,17 @@ Schematron generated from Trifolia on 8/1/2024
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.301-2024-05-01-warnings" />
     <sch:active pattern="p-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.1-2024-05-01-warnings" />
   </sch:phase>
+  <sch:pattern id="p-validate_document-level-templateId-errors">
+    <sch:rule id="r-validate_document-level-templateId-errors-abstract" abstract="true">
+      <sch:assert test="cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.1.1.2'][@extension = '2023-02-01'] or cda:ClinicalDocument/cda:templateId[@root = '2.16.840.1.113883.10.20.5.1.1.1'][@extension = '2024-05-01']">
+            SHALL contain exactly one of the following report level templateIds: 
+            LTCF Monthly Summary Data for MDRO, CDI, UTI, and Prevention Process Measures: templateId[@root = '2.16.840.1.113883.10.20.5.1.1.2'][@extension = '2023-02-01'] or
+            Laboratory Identified MDRO or CDI Event Report for LTCF (V4): templateId[@root = '2.16.840.1.113883.10.20.5.1.1.1'][@extension = '2024-05-01']".</sch:assert>
+    </sch:rule>
+    <sch:rule id="r-validate_document-level-templateId-errors" context="/">
+      <sch:extends rule="r-validate_document-level-templateId-errors-abstract" />
+    </sch:rule>
+  </sch:pattern>
   <sch:pattern id="p-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors">
     <sch:rule id="r-urn-oid-2.16.840.1.113883.10.20.22.4.2-errors-abstract" abstract="true">
       <sch:assert id="a-81-7130" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:81-7130).</sch:assert>
@@ -910,7 +922,7 @@ Schematron generated from Trifolia on 8/1/2024
       <sch:assert id="a-5555-31410" test="cda:recordTarget/cda:patientRole/cda:patient/cda:administrativeGenderCode[@code]">This administrativeGenderCode SHALL contain exactly one [1..1] @code, which SHALL be selected from ValueSet Administrative Gender (HL7 V3) urn:oid:2.16.840.1.113883.1.11.1 DYNAMIC (CONF:5555-31410).</sch:assert>
       <sch:assert id="a-5555-31411" test="cda:recordTarget/cda:patientRole/cda:patient/cda:birthTime[@value]">This birthTime SHALL contain exactly one [1..1] @value (CONF:5555-31411).</sch:assert>
       <sch:assert id="a-5555-31424" test="cda:recordTarget/cda:patientRole/cda:patient[count(cda:languageCommunication) &gt; 0]">This patient SHALL contain at least one [1..*] languageCommunication (CONF:5555-31424).</sch:assert>
-      <sch:assert id="a-5555-31425" test="cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication[count(cda:languageCode)=1]">Such languageCommunications SHALL contain exactly one [1..1] languageCode, which SHALL be selected from ValueSet Language urn:oid:2.16.840.1.113883.1.11.11526 DYNAMIC (CONF:5555-31425).</sch:assert>
+      <sch:assert id="a-5555-31425" test="cda:recordTarget/cda:patientRole/cda:patient/cda:languageCommunication[count(cda:languageCode)=1]">Such languageCommunications SHALL contain exactly one [1..1] languageCode, which SHALL be selected from ValueSet NHSN Abridged Primary Language List urn:oid:2.16.840.1.114222.24.7.1 DYNAMIC (CONF:5555-31425).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2024-05-01-errors" context="cda:ClinicalDocument[cda:templateId[@root='2.16.840.1.113883.10.20.5.1.1.3' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.1.1.3-2024-05-01-errors-abstract" />
@@ -945,7 +957,7 @@ Schematron generated from Trifolia on 8/1/2024
       <sch:assert id="a-5554-31051" test="cda:value[@xsi:type='CD'][@codeSystem='2.16.840.1.113883.6.1']">This value SHALL contain exactly one [1..1] @codeSystem="2.16.840.1.113883.6.1" (CodeSystem: LOINC urn:oid:2.16.840.1.113883.6.1) (CONF:5554-31051).</sch:assert>
       <sch:assert id="a-5554-31054" test="@classCode='OBS'">SHALL contain exactly one [1..1] @classCode="OBS" Observation (CodeSystem: HL7ActClass urn:oid:2.16.840.1.113883.5.6 STATIC) (CONF:5554-31054).</sch:assert>
       <sch:assert id="a-5554-31055" test="@moodCode='EVN'">SHALL contain exactly one [1..1] @moodCode="EVN" Event (CodeSystem: HL7ActMood urn:oid:2.16.840.1.113883.5.1001 STATIC) (CONF:5554-31055).</sch:assert>
-      <sch:assert id="a-5554-31056" test="@negationInd">SHALL contain exactly one [1..1] @negationInd (CONF:5554-31056).</sch:assert>
+      <sch:assert id="a-5554-31121-c" test="not(@nullFlavor and @negationInd) and (@nullFlavor or @negationInd)">One of @negationInd or @nullFlavor (but not both) must be present (CONF:5554-31121).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-errors" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.300' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-errors-abstract" />
@@ -1359,7 +1371,7 @@ Schematron generated from Trifolia on 8/1/2024
   </sch:pattern>
   <sch:pattern id="p-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings">
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings-abstract" abstract="true">
-      <sch:assert test="."></sch:assert>
+      <sch:assert id="a-5554-31056" test="@negationInd">SHOULD contain zero or one [0..1] @negationInd (CONF:5554-31056).</sch:assert>
     </sch:rule>
     <sch:rule id="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings" context="cda:observation[cda:templateId[@root='2.16.840.1.113883.10.20.5.6.300' and @extension='2024-05-01']]">
       <sch:extends rule="r-urn-hl7ii-2.16.840.1.113883.10.20.5.6.300-2024-05-01-warnings-abstract" />

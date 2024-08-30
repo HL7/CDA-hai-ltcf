@@ -25,9 +25,6 @@
           - added birth sex
          2024-03-01 Second Ballot Updates                   Sarah Gaunt
           - added observation to record whether or not an interpreter is needed (in social history section)
-          - added two alternative mechanisms to record whether or not an interpreter was used this encounter
-                - observation in social history section
-                - RIM extension in encompassingEncounter (will need approval by SD and addition to schema if approved)
 -->
 <?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -79,7 +76,7 @@
                 <sdtc:ethnicGroupCode code="2156-8" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Costa Rican" />
                 <!-- Added ability to record language and preferred language -->
                 <languageCommunication>
-                    <languageCode code="en" />
+                    <languageCode code="eng" />
                     <preferenceInd value="true" />
                 </languageCommunication>
             </patient>
@@ -125,12 +122,6 @@
                     <code code="1255-9" codeSystem="2.16.840.1.113883.6.277" codeSystemName="cdcNHSN" displayName="Long Term Care Facility Dementia Unit" />
                 </healthCareFacility>
             </location>
-            <!-- This is an alternative to the Interpreter Used by Patient This Encounter Observation in the 
-                 NHSN Social History Section - to be decided which option through the ballot process 
-                 See Volume 1 "Questions for Ballot Commenters" -->
-            <!-- If sdtc:specialArrangementCode is present and @code="int" then an interpreter was used in this encounter,
-                 if sdtc:specialArragementCode is not present (or is present but @code!="int" then an interpreter was not used in this encounter -->
-            <sdtc:specialArrangementCode code="int" codeSystem="2.16.840.1.113883.4.642.1.1090" codeSystemName="Special arrangements" displayName="Interpreter" />
         </encompassingEncounter>
     </componentOf>
 
@@ -379,10 +370,6 @@
                             <value xsi:type="CD" code="54588-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interpreter needed" />
                         </observation>
                     </entry>
-
-                    <!-- This is an alternative to having sdtc:specialArrangementCode in the encompassingEncounter in the header
-                         to be decided which option through the ballot process
-                         See Volume 1 "Questions for Ballot Commenters" -->
                     <entry typeCode="DRIV">
                         <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
                             If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
@@ -390,7 +377,6 @@
                         <observation classCode="OBS" moodCode="EVN" negationInd="false">
                             <!-- [HAI R4STU3] Interpreter Used by Patient This Encounter Observation -->
                             <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.301" />
-                            <id nullFlavor="NA" />
                             <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
                             <statusCode code="completed" />
                             <value xsi:type="CD" code="314431000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Interpreter present (finding)" />
