@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        Title: Antimicrobial Use Order Report in LTCF
+        Filename: CDAR2_IG_HAI_AULTC_STU1.1_AU_Orders.xml
+        
+        Specification: 
+        
+        This sample document was created by Lantana Consulting Group
+        on behalf of the Center for Disease Control and Prevention
+        to meet the needs of the National Healthcare Safety Network (NHSN)
+        Healthcare Associated Infection reporting.
+        For more information on NHSN please contact nhsn@cdc.gov (http://www.cdc.gov/nhsn/)
+-->
+<?xml-stylesheet type="text/xsl" href="../../transform/hai-display.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc">
+    <!-- Comments precede their subject -->
+    <!-- This is a single-person report. -->
+    <realmCode code="US" />
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <!-- Conformant to Healthcare Associated Infection Report -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.25" />
+    <!-- Conformant to HAI Single-Person Report Generic Constraints (V6) -->
+    <templateId root="2.16.840.1.113883.10.20.5.4.27" extension="2025-05-01" />
+    <!--  [HAI-LTCF-AU] Conformant to HAI Antimicrobial Use Report for LTCF (V2) -->
+    <templateId root="2.16.840.1.113883.10.20.5.2.1.1" extension="2025-07-01" />
+    <!-- Document ID (extension) is scoped by vendor/software -->
+    <id root="2.16.840.1.113883.3.117.1.1.5.2.1.1.2" extension="20202201" />
+    <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="51897-7" displayName="Healthcare Associated Infection Report" />
+    <title>Antimicrobial Use Report</title>
+    <effectiveTime value="20230630" />
+    <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+    <languageCode code="en-US" />
+    <setId root="2.16.840.1.113883.3.117.1.1.5.2.1.1.1" extension="31" />
+    <versionNumber value="1" />
+    <recordTarget>
+        <patientRole>
+            <!-- Resident identifier - scoped by facility -->
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.1" extension="123456" />
+            <patient>
+                <name>
+                    <family>Nuclear</family>
+                    <given>Ned</given>
+                </name>
+                <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="M" />
+                <!-- Resident Date of Birth -->
+                <birthTime value="19541125" />
+                <!-- To represent an unknown raceCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<raceCode nullFlavor="ASKU "/>-->
+                <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+                <!-- If multiple races -->
+                <sdtc:raceCode code="1002-5" displayName="American Indian/Alaska Native" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+                <!-- To represent an unknown ethnicGroupCode, set nullFlavor="UNK". To represent "declined to respond", set nullFlavor="ASKU". 
+             See commented out example below -->
+                <!--<ethnicGroupCode nullFlavor="UNK" />-->
+                <ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" />
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <!-- Author/authenticator may be a software or person.
+       This author is scoped by facility. -->
+    <author>
+        <time value="20230630" />
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="anAuthorID" />
+        </assignedAuthor>
+    </author>
+    <!-- The custodian of the CDA document is NHSN -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.114222.4.3.2.11" />
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <!-- legal authenticator is scoped by facility -->
+    <legalAuthenticator>
+        <time value="20230630" />
+        <signatureCode code="S" />
+        <assignedEntity>
+            <id root="2.16.840.1.113883.3.117.1.1.5.1.1.2" extension="aLegalAuthenticatorID" />
+        </assignedEntity>
+    </legalAuthenticator>
+    <componentOf>
+        <encompassingEncounter>
+            <effectiveTime xsi:type="IVL_TS">
+                <!-- 1st day of reporting month -->
+                <low value="20230601" />
+                <!-- Last day of reporting month -->
+                <high value="20230630" />
+            </effectiveTime>
+            <dischargeDispositionCode code="306689006" displayName="Discharge to home (procedure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+            <location>
+                <healthCareFacility>
+                    <!-- Facility ID -->
+                    <id root="2.16.840.1.113883.3.117.1.1.5.1.1" extension="9W" />
+                    <code codeSystem="2.16.840.1.113883.6.259" codeSystemName="HL7 HealthCareServiceLocation" code="1258-3" displayName="Long Term Care Facility General Nursing Unit" />
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <!-- ********************************************************
+     Structured Body
+     ******************************************************** -->
+    <component>
+        <structuredBody>
+            <!-- ********************************************************
+                Plan of Treatment Section in a LTCF Report
+              ******************************************************** -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- Plan of Treatment Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.7" extension="2024-01-01" />
+                    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Plan of care note" />
+                    <title>Planned Antimicrobial Activity Section</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Medication</th>
+                                    <th>Planned Antimicrobial start date</th>
+                                    <th>Planned Antimicrobial end date</th>
+                                </tr>
+                                <tr>
+                                    <td>cefadroxil 25 MG/ML Oral Suspension</td>
+                                    <td>June 2nd, 2023</td>
+                                    <td>June 6th, 2023</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry>
+                        <!-- Planned Medication Activity in a LTCF Report-->
+                        <substanceAdministration moodCode="INT" classCode="SBADM">
+                            <templateId root="2.16.840.1.113883.10.20.5.1.3.17" extension="2024-01-01" />
+                            <id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66" />
+                            <text>cefadroxil 25 MG/ML Oral Suspension</text>
+                            <!-- status shall be 'active' -->
+                            <statusCode code="active" />
+                            <!-- The effectiveTime in a planned medication activity represents the time that the medication activity should occur. -->
+                            <effectiveTime xsi:type="IVL_TS">
+                                <!-- Planned antimicrobial start date -->
+                                <low value="20230602" />
+                                <!-- Planned antimicrobial stop date -->
+                                <high value="20230606" />
+                            </effectiveTime>
+                            <!-- medication administration route -->
+                            <routeCode code="26643006" displayName="Oral route (qualifier value)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+                            <consumable>
+                                <manufacturedProduct classCode="MANU">
+                                    <!-- AU Medication Information in a LTCF Report -->
+                                    <templateId root="2.16.840.1.113883.10.20.5.1.3.18" extension="2024-01-01" />
+                                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
+                                    <manufacturedMaterial>
+                                        <code code="1665021" displayName="ceftriaxone 1000 MG Injection" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+                                    </manufacturedMaterial>
+                                    <manufacturerOrganization>
+                                        <name>Medication Factory Inc.</name>
+                                    </manufacturerOrganization>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            <!-- ********************************************************
+                Medications Section in a LTCF Report
+              ******************************************************** -->
+            <component>
+                <section nullFlavor="NI">
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- Medications Section in a LTCF Report -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.8" extension="2024-01-01" />
+                    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Medication Use" />
+                    <title>Antimicrobial Treatment Administrations</title>
+                    <text>No Information</text>
+                </section>
+            </component>
+            <!-- ********************************************************
+               Encounters Section in a LTCF Report (V2)
+                ******************************************************** -->
+            <component>
+                <section>
+                    <!-- HAI Section Generic Constraints -->
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- Encounters Section in an LTCF Report (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.5.1.2.2" extension="2024-01-01" />
+                    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" displayName="History of Encounters" />
+                    <title>Encounters</title>
+                    <text>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Admission Date</th>
+                                    <th>Discharge Date</th>
+                                    <th>Discharge Disposition</th>
+                                </tr>
+                                <tr>
+                                    <td>June 1, 2023</td>
+                                    <td>June 9, 2023</td>
+                                    <td>Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <encounter classCode="ENC" moodCode="EVN">
+                            <!-- Encounter Activity in a LTCF Report -->
+                            <templateId root="2.16.840.1.113883.10.20.5.2.3.1" extension="2024-01-01" />
+                            <id nullFlavor="NA" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <!-- Date of admission is defined as the date the resident entered the facility. When residents leave the facility for 3 or more consecutive days, distinct encounter activity entries should be used to document these stays-->
+                                <!-- Date of admission for the encounter -->
+                                <low value="20230601" />
+                                <!-- Date of discharge for the encounter -->
+                                <high value="20230609" />
+                            </effectiveTime>
+                            <!-- Discharge Disposition for the encounter -->
+                            <sdtc:dischargeDispositionCode code="64" codeSystem="2.16.840.1.113883.12.112" codeSystemName="HL7 Discharge Disposition"
+                                displayName="Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare" />
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <!-- 
+            ******************************************************** 
+            NHSN Social History Section (V4)
+            ******************************************************** 
+            -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.5.4.26" />
+                    <!-- [HAI R4D4] NHSN Social History Section (V4) -->
+                    <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.5.81" />
+                    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" displayName="Social History" />
+                    <title>NHSN Social History Section (V4)</title>
+                    <text>
+                        <list>
+                            <item>Sex<list>
+                                    <item>Male</item>
+                                </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Required<list>
+                                    <item>Yes</item>
+                                </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Interpreter Used by Patient This Encounter<list>
+                                    <item>Yes</item>
+                                </list>
+                            </item>
+                        </list>
+                    </text>
+                    <entry>
+                        <!-- Sex -->
+                        <observation classCode="OBS" moodCode="EVN">
+                            <!-- [HAI R4D4] Sex -->
+                            <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.305" />
+                            <code code="46098-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex" />
+                            <statusCode code="completed" />
+                            <value code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender" displayName="Male" xsi:type="CD" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient needs or wants an interpreter to communicate with a doctor or health care staff. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU4] Interpreter Needed (V2) Observation -->
+                            <templateId extension="2025-05-01" root="2.16.840.1.113883.10.20.5.6.300" />
+                            <code code="54588-9" codeSystem="2.16.840.1.113883.6.1" />
+                            <effectiveTime>
+                                <low nullFlavor="NA" />
+                            </effectiveTime>
+                            <value xsi:type="CD" code="373066001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Yes (qualifier value)" />
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!-- This observation records whether the patient used an interpreter to communicate with a doctor or health care staff in this encoounter.
+                            If the person did use an interpreter, set the value of @negationInd to false. If the person did not use an interpreter, 
+                            set the value of @negationInd to true. -->
+                        <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                            <!-- [HAI R4STU3] Interpreter Used by Patient This Encounter Observation -->
+                            <templateId extension="2024-05-01" root="2.16.840.1.113883.10.20.5.6.301" />
+                            <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                            <statusCode code="completed" />
+                            <value xsi:type="CD" code="314431000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Interpreter present (finding)" />
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
