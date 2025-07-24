@@ -13,7 +13,7 @@ Repo Description: CDA Implementation Guide XML and supporting files for the foll
    * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 1.0 (1.1.0)
    * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 1.1 (1.1.1)
    * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 1.2 (1.1.2)
-   * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 2.0 (1.2.0)
+   * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 2.0 (1.2)
    * NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities, Release 1, STU 3.0 (1.3.0)
    
 
