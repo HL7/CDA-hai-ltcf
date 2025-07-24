@@ -3,6 +3,7 @@
 Repo Name: CDA-hai-ltcf
 Project Name: HL7 Implementation Guide for CDA® Release 2: National Healthcare Safety Network (NHSN) Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities
 Project Insight Number: 1511 (https://www.hl7.org/Special/committees/projman/searchableprojectindex.cfm?action=edit&ProjectNumber=1511)
+
 Products: 
  * HL7 Implementation Guide for CDA® Release 2: NHSN Healthcare Associated Infection (HAI) Reports for Long Term Care Facilities (HAI-LTCF)
  * HL7 Implementation Guide for CDA® Release 2: NHSN Healthcare Associated Infection (HAI) Reports for Antimicrobial Use (AU) Reporting from Long Term Care Facilities (HAI-AULTC)
